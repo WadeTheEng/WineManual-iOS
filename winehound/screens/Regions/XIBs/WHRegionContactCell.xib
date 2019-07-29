@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="365" id="Qay-p1-d0x" customClass="WHRegionContactCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="365"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qay-p1-d0x" id="D7W-bu-Xeu">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="364"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPI-cO-mkh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="DBO-n6-2SJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uPI-cO-mkh" firstAttribute="top" secondItem="D7W-bu-Xeu" secondAttribute="top" id="4e7-b8-lqa"/>
+                    <constraint firstAttribute="trailing" secondItem="uPI-cO-mkh" secondAttribute="trailing" id="CgX-Om-Veq"/>
+                    <constraint firstItem="uPI-cO-mkh" firstAttribute="leading" secondItem="D7W-bu-Xeu" secondAttribute="leading" id="MXh-N6-cku"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mapContainerView" destination="uPI-cO-mkh" id="deg-xg-qJJ"/>
+                <outlet property="mapViewHeightConstraint" destination="DBO-n6-2SJ" id="x91-NX-Mth"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

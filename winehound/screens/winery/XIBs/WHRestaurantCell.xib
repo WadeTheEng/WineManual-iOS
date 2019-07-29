@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="388" id="KcZ-Zg-nha" customClass="WHRestaurantCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="388"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KcZ-Zg-nha" id="J87-jg-LXY">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UI-dK-8V1">
+                        <rect key="frame" x="10" y="313" width="300" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="ULE-jy-tLv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="View Menu">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unM-zZ-f6a">
+                        <rect key="frame" x="10" y="10" width="300" height="283"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0UI-dK-8V1" secondAttribute="trailing" constant="10" id="6jR-m6-T3F"/>
+                    <constraint firstAttribute="bottom" secondItem="0UI-dK-8V1" secondAttribute="bottom" constant="30" id="9he-yT-eQt"/>
+                    <constraint firstItem="0UI-dK-8V1" firstAttribute="top" secondItem="unM-zZ-f6a" secondAttribute="bottom" constant="20" id="FI5-Yu-A2p"/>
+                    <constraint firstItem="0UI-dK-8V1" firstAttribute="leading" secondItem="J87-jg-LXY" secondAttribute="leading" constant="10" id="NF3-du-A9b"/>
+                    <constraint firstAttribute="trailing" secondItem="unM-zZ-f6a" secondAttribute="trailing" constant="10" id="hhz-4Z-VbX"/>
+                    <constraint firstAttribute="centerX" secondItem="0UI-dK-8V1" secondAttribute="centerX" id="ixl-aX-1iw"/>
+                    <constraint firstItem="unM-zZ-f6a" firstAttribute="top" secondItem="J87-jg-LXY" secondAttribute="top" constant="10" id="rUB-qY-Mee"/>
+                    <constraint firstItem="unM-zZ-f6a" firstAttribute="leading" secondItem="J87-jg-LXY" secondAttribute="leading" constant="10" id="rfl-Kc-HDk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_descriptionTextView" destination="unM-zZ-f6a" id="46X-yO-TCz"/>
+                <outlet property="_viewMenuButton" destination="0UI-dK-8V1" id="2gB-7X-L7V"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

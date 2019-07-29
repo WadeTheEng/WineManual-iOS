@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Regions</string>
+		<key>detail</key>
+		<string>Explore regions and plan your next wine tour or vacation.</string>
+		<key>image_name</key>
+		<string>onboarding_regions_icon</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Wineries</string>
+		<key>detail</key>
+		<string>Discover wineries around Australia and find ones in your local area.</string>
+		<key>image_name</key>
+		<string>onboarding_wineries_icon</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Wines</string>
+		<key>detail</key>
+		<string>View detailed information on wines at the winery, including tasting notes.</string>
+		<key>image_name</key>
+		<string>onboarding_wines_icon</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Favourites</string>
+		<key>detail</key>
+		<string>Add your favourite wineries and wines and share them with friends and family.</string>
+		<key>image_name</key>
+		<string>onboarding_favorites_icon</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Events</string>
+		<key>detail</key>
+		<string>Find out what&apos;s on and plan your next winery trip.</string>
+		<key>image_name</key>
+		<string>onboarding_events_icon</string>
+	</dict>
+</array>
+</plist>

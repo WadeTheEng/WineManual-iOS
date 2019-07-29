@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="208" id="4og-F3-Ci8" customClass="WHEventsTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4og-F3-Ci8" id="6jl-2Q-htp">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="207"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are no events for this Winery." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmW-lP-cpC">
+                        <rect key="frame" x="20" y="0.0" width="280" height="207"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-YM-6Iv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="207"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="poE-HR-mNN">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                    </collectionView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="VhJ-FX-42l">
+                        <rect key="frame" x="150" y="94" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </activityIndicatorView>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490196078431" green="0.92549019607843142" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yGY-YM-6Iv" secondAttribute="bottom" id="6am-oS-vSe"/>
+                    <constraint firstItem="yGY-YM-6Iv" firstAttribute="leading" secondItem="6jl-2Q-htp" secondAttribute="leading" id="JhR-6k-Fph"/>
+                    <constraint firstAttribute="centerX" secondItem="VhJ-FX-42l" secondAttribute="centerX" id="LDV-hG-C5T"/>
+                    <constraint firstItem="yGY-YM-6Iv" firstAttribute="top" secondItem="6jl-2Q-htp" secondAttribute="top" id="NxE-95-lp1"/>
+                    <constraint firstAttribute="bottom" secondItem="LmW-lP-cpC" secondAttribute="bottom" id="Xxd-FE-PcO"/>
+                    <constraint firstItem="LmW-lP-cpC" firstAttribute="top" secondItem="6jl-2Q-htp" secondAttribute="top" id="l6Z-Ow-TRj"/>
+                    <constraint firstAttribute="centerY" secondItem="VhJ-FX-42l" secondAttribute="centerY" constant="-0.5" id="ljW-3n-Ldm"/>
+                    <constraint firstAttribute="trailing" secondItem="yGY-YM-6Iv" secondAttribute="trailing" id="t6h-Oc-UzF"/>
+                    <constraint firstAttribute="trailing" secondItem="LmW-lP-cpC" secondAttribute="trailing" constant="20" id="y3f-Ry-v7H"/>
+                    <constraint firstItem="LmW-lP-cpC" firstAttribute="leading" secondItem="6jl-2Q-htp" secondAttribute="leading" constant="20" id="ydu-Yn-QGb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityIndicator" destination="VhJ-FX-42l" id="v0I-c9-4A9"/>
+                <outlet property="collectionView" destination="yGY-YM-6Iv" id="oOx-UO-UCL"/>
+                <outlet property="noEventsLabel" destination="LmW-lP-cpC" id="0Ij-6F-hwI"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="5" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Amenity" representedClassName="WHAmenityMO" syncable="YES">
+        <attribute name="amenityId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="iconIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="wineries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Winery" inverseName="amenities" inverseEntity="Winery" syncable="YES"/>
+    </entity>
+    <entity name="Brewery" representedClassName="WHBreweryMO" parentEntity="Winery" syncable="YES"/>
+    <entity name="Cidery" representedClassName="WHCideryMO" parentEntity="Winery" syncable="YES"/>
+    <entity name="Event" representedClassName="WHEventMO" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="eventDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="eventIds" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="featured" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="finishDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentEventId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priceDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="regionIds" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="stateIds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tradeEvent" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="visible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wineryId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="wineryIds" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Event" inverseName="featuredEvent" inverseEntity="Event" syncable="YES"/>
+        <relationship name="featuredEvent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="events" inverseEntity="Event" syncable="YES"/>
+        <relationship name="photographs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photograph" inverseName="events" inverseEntity="Photograph" syncable="YES"/>
+        <relationship name="regions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Region" inverseName="events" inverseEntity="Region" syncable="YES"/>
+        <relationship name="wineries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Winery" inverseName="events" inverseEntity="Winery" syncable="YES"/>
+    </entity>
+    <entity name="Favourite" representedClassName="WHFavouriteMO" syncable="YES">
+        <attribute name="favouriteEntityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favouriteId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="OpenTime" representedClassName="WHOpenTimeMO" elementID="CellarDoorOpenTime" syncable="YES">
+        <attribute name="closeTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="day" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="openTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="restaurants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="openTimes" inverseEntity="Restaurant" syncable="YES"/>
+        <relationship name="wineries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Winery" inverseName="cellarDoorOpenTimes" inverseEntity="Winery" syncable="YES"/>
+    </entity>
+    <entity name="Panorama" representedClassName="WHPanoramaMO" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="wineryId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="photograph" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Photograph" inverseName="panorama" inverseEntity="Photograph" syncable="YES"/>
+        <relationship name="winery" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Winery" inverseName="cellarDoorPanoramas" inverseEntity="Winery" syncable="YES"/>
+    </entity>
+    <entity name="Photograph" representedClassName="WHPhotographMO" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="eventId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageThumbURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageWineThumbURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photographId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="regionId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="wineId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="wineryId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="cellarDoors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Winery" inverseName="cellarDoorPhotographs" inverseEntity="Winery" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" inverseName="photographs" inverseEntity="Event" syncable="YES"/>
+        <relationship name="panorama" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Panorama" inverseName="photograph" inverseEntity="Panorama" syncable="YES"/>
+        <relationship name="regions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Region" inverseName="photographs" inverseEntity="Region" syncable="YES"/>
+        <relationship name="restaurants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="photographs" inverseEntity="Restaurant" syncable="YES"/>
+        <relationship name="wineClubs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WineClub" inverseName="photographs" inverseEntity="WineClub" syncable="YES"/>
+        <relationship name="wineries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Winery" inverseName="photographs" inverseEntity="Winery" syncable="YES"/>
+        <relationship name="wines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Wine" inverseName="photographs" inverseEntity="Wine" syncable="YES"/>
+    </entity>
+    <entity name="Region" representedClassName="WHRegionMO" syncable="YES">
+        <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasBreweries" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasCideries" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasWineries" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pdfURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="regionZone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stateId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="websiteUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zoomLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" inverseName="regions" inverseEntity="Event" syncable="YES"/>
+        <relationship name="photographs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photograph" inverseName="regions" inverseEntity="Photograph" syncable="YES"/>
+        <relationship name="wineries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Winery" inverseName="regions" inverseEntity="Winery" syncable="YES"/>
+    </entity>
+    <entity name="Restaurant" representedClassName="WHRestaurantMO" syncable="YES">
+        <attribute name="menuPdf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="restaurantDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="restaurantId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="restaurantName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wineryId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="openTimes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OpenTime" inverseName="restaurants" inverseEntity="OpenTime" syncable="YES"/>
+        <relationship name="photographs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photograph" inverseName="restaurants" inverseEntity="Photograph" syncable="YES"/>
+        <relationship name="winery" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Winery" inverseName="restaurants" inverseEntity="Winery" syncable="YES"/>
+    </entity>
+    <entity name="Wine" representedClassName="WHWineMO" syncable="YES">
+        <attribute name="alcoholContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="aroma" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="closure" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="colour" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cost" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateBottled" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayVariety" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="palate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ph" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="vineyard" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vintage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wineDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wineId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="winemakers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wineRangeId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="wineryId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="photographs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photograph" inverseName="wines" inverseEntity="Photograph" syncable="YES"/>
+        <relationship name="ranges" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WineRange" inverseName="wines" inverseEntity="WineRange" syncable="YES"/>
+        <relationship name="varieties" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WineVariety" inverseName="wines" inverseEntity="WineVariety" syncable="YES"/>
+        <relationship name="wineries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Winery" inverseName="wines" inverseEntity="Winery" syncable="YES"/>
+    </entity>
+    <entity name="WineClub" representedClassName="WHWineClubMO" syncable="YES">
+        <attribute name="clubDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clubIdentifier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="clubName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="wineryId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="clubWineries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Winery" inverseName="wineClubs" inverseEntity="Winery" syncable="YES"/>
+        <relationship name="photographs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photograph" inverseName="wineClubs" inverseEntity="Photograph" syncable="YES"/>
+    </entity>
+    <entity name="WineRange" representedClassName="WHWineRangeMO" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rangeDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rangeId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="wineries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Winery" inverseName="ranges" inverseEntity="Winery" syncable="YES"/>
+        <relationship name="wines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Wine" inverseName="ranges" inverseEntity="Wine" syncable="YES"/>
+    </entity>
+    <entity name="Winery" representedClassName="WHWineryMO" syncable="YES">
+        <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cellarDoorDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebook" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasPanoramas" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasRestaurants" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasWineClubs" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastPushDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="logoURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="presence" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="regionIds" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="stateIds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timezone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="visible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wineryId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="zoomLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="amenities" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Amenity" inverseName="wineries" inverseEntity="Amenity" syncable="YES"/>
+        <relationship name="cellarDoorOpenTimes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OpenTime" inverseName="wineries" inverseEntity="OpenTime" syncable="YES"/>
+        <relationship name="cellarDoorPanoramas" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Panorama" inverseName="winery" inverseEntity="Panorama" syncable="YES"/>
+        <relationship name="cellarDoorPhotographs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photograph" inverseName="cellarDoors" inverseEntity="Photograph" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Event" inverseName="wineries" inverseEntity="Event" syncable="YES"/>
+        <relationship name="photographs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Photograph" inverseName="wineries" inverseEntity="Photograph" syncable="YES"/>
+        <relationship name="ranges" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WineRange" inverseName="wineries" inverseEntity="WineRange" syncable="YES"/>
+        <relationship name="regions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Region" inverseName="wineries" inverseEntity="Region" syncable="YES"/>
+        <relationship name="restaurants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="winery" inverseEntity="Restaurant" syncable="YES"/>
+        <relationship name="wineClubs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="WineClub" inverseName="clubWineries" inverseEntity="WineClub" syncable="YES"/>
+        <relationship name="wines" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Wine" inverseName="wineries" inverseEntity="Wine" syncable="YES"/>
+    </entity>
+    <entity name="WineVariety" representedClassName="WHWineVarietyMO" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="varietyId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="wines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Wine" inverseName="varieties" inverseEntity="Wine" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Amenity" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Brewery" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Cidery" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Event" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Favourite" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="OpenTime" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Panorama" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Photograph" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Region" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Restaurant" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Wine" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="WineClub" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="WineRange" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Winery" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="WineVariety" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

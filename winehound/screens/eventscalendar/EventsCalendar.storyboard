@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="WWT-3i-Lpg">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7ft-jh-Nln">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="WWT-3i-Lpg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="77n-lf-7LK">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9G5-vN-Z6I" kind="relationship" relationship="rootViewController" id="ntS-Bs-M7d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rai-tj-9mW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="347"/>
+        </scene>
+        <!--Events Calendar View Controller-->
+        <scene sceneID="zQt-GW-c5U">
+            <objects>
+                <viewController storyboardIdentifier="WHEventsCalendarViewController" id="9G5-vN-Z6I" customClass="WHEventsCalendarViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MNy-5b-DyP"/>
+                        <viewControllerLayoutGuide type="bottom" id="kwC-EP-tWh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4tw-Bn-fJu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vhQ-l8-q9C">
+                                <rect key="frame" x="0.0" y="100" width="320" height="468"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ya9-MJ-tZw">
+                                <rect key="frame" x="0.0" y="100" width="320" height="238"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="238" id="gHZ-IH-BoB"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="flZ-aL-9jp">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBh-re-Cnx" customClass="V8HorizontalPickerView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="36"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.094117647060000004" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="4UL-dt-y9j"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vp8-Gz-7ij">
+                                <rect key="frame" x="0.0" y="337" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="bMZ-LC-wxh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vp8-Gz-7ij" firstAttribute="leading" secondItem="4tw-Bn-fJu" secondAttribute="leading" id="56o-86-Wq2"/>
+                            <constraint firstAttribute="bottom" secondItem="vhQ-l8-q9C" secondAttribute="bottom" id="Ano-KB-TXR"/>
+                            <constraint firstItem="vhQ-l8-q9C" firstAttribute="top" secondItem="lBh-re-Cnx" secondAttribute="bottom" id="DS0-MM-urp"/>
+                            <constraint firstItem="ya9-MJ-tZw" firstAttribute="bottom" secondItem="Vp8-Gz-7ij" secondAttribute="bottom" id="DY1-9O-ZU0"/>
+                            <constraint firstItem="lBh-re-Cnx" firstAttribute="leading" secondItem="4tw-Bn-fJu" secondAttribute="leading" id="EJy-oG-xjc"/>
+                            <constraint firstItem="lBh-re-Cnx" firstAttribute="top" secondItem="MNy-5b-DyP" secondAttribute="bottom" id="L6W-U8-XlC"/>
+                            <constraint firstItem="ya9-MJ-tZw" firstAttribute="leading" secondItem="4tw-Bn-fJu" secondAttribute="leading" id="Lw5-Cg-wnp"/>
+                            <constraint firstAttribute="trailing" secondItem="ya9-MJ-tZw" secondAttribute="trailing" id="O25-1O-3Zi"/>
+                            <constraint firstAttribute="trailing" secondItem="vhQ-l8-q9C" secondAttribute="trailing" id="Uxq-hZ-jC0"/>
+                            <constraint firstItem="vhQ-l8-q9C" firstAttribute="leading" secondItem="4tw-Bn-fJu" secondAttribute="leading" id="Xpx-4l-QAm"/>
+                            <constraint firstItem="ya9-MJ-tZw" firstAttribute="top" secondItem="lBh-re-Cnx" secondAttribute="bottom" id="i8X-t9-oEf"/>
+                            <constraint firstAttribute="trailing" secondItem="lBh-re-Cnx" secondAttribute="trailing" id="jta-hM-9Of"/>
+                            <constraint firstAttribute="trailing" secondItem="Vp8-Gz-7ij" secondAttribute="trailing" id="vbE-H2-C7U"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bux-mc-Gs1"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="_collectionViewFooterView" destination="Vp8-Gz-7ij" id="swm-Ci-zRc"/>
+                        <outlet property="collectionViewHeightConstraint" destination="gHZ-IH-BoB" id="F2k-Ir-Nqu"/>
+                        <outlet property="collectionViewTopSpaceConstraint" destination="i8X-t9-oEf" id="Oi9-kp-1tb"/>
+                        <outlet property="datePickerCollectionView" destination="ya9-MJ-tZw" id="Vbr-21-01T"/>
+                        <outlet property="eventsTableView" destination="vhQ-l8-q9C" id="YaP-Cc-Lj2"/>
+                        <outlet property="monthHorizontalPickerView" destination="lBh-re-Cnx" id="Q8O-Cr-DV2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJt-nf-DHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="347"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

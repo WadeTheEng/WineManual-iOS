@@ -1,0 +1,1482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40975ECE1AA045FBB97628ED /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5780684D24D45EBBE8725F9 /* libPods.a */; };
+		4D1837A91860483300992209 /* UIViewController+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1837A81860483300992209 /* UIViewController+Appearance.m */; };
+		4D207E77187A9B8D000E12ED /* WHWineRangeMO+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D207E76187A9B8D000E12ED /* WHWineRangeMO+Mapping.m */; };
+		4D207E7A187A9C00000E12ED /* WHWineMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D207E79187A9C00000E12ED /* WHWineMO.m */; };
+		4D207E7D187A9C01000E12ED /* WHWineRangeMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D207E7C187A9C01000E12ED /* WHWineRangeMO.m */; };
+		4D23353F1855ADD70046B0F7 /* WHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D23353E1855ADD70046B0F7 /* WHDetailViewController.m */; };
+		4D2335421855AFFF0046B0F7 /* TableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2335411855AFFF0046B0F7 /* TableHeaderView.m */; };
+		4D24BDCA1850531F00452294 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D24BDC91850531F00452294 /* MapKit.framework */; };
+		4D24BDCC1850576600452294 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D24BDCB1850576600452294 /* MessageUI.framework */; };
+		4D24BDD1185064D400452294 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D24BDD0185064D400452294 /* events.json */; };
+		4D24BDDA18506C4A00452294 /* WHEventMO+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D24BDD918506C4A00452294 /* WHEventMO+Mapping.m */; };
+		4D2C1DBF185AA201008FBAAA /* WHRestKitSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2C1DBE185AA201008FBAAA /* WHRestKitSetup.m */; };
+		4D30FBEE1844708D0023A2E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D30FBE71844708D0023A2E9 /* main.m */; };
+		4D30FBF5184472FB0023A2E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D30FBF3184472FB0023A2E9 /* Images.xcassets */; };
+		4D30FC22184481600023A2E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D30FC04184481600023A2E9 /* AppDelegate.m */; };
+		4D30FC23184481600023A2E9 /* Favourites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D30FC0A184481600023A2E9 /* Favourites.storyboard */; };
+		4D30FC24184481600023A2E9 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D30FC0E184481600023A2E9 /* Info.storyboard */; };
+		4D30FC25184481600023A2E9 /* Regions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D30FC13184481600023A2E9 /* Regions.storyboard */; };
+		4D30FC26184481600023A2E9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D30FC18184481600023A2E9 /* Settings.storyboard */; };
+		4D30FC27184481600023A2E9 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D30FC1C184481600023A2E9 /* SideMenu.storyboard */; };
+		4D30FC28184481600023A2E9 /* Wineries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D30FC21184481600023A2E9 /* Wineries.storyboard */; };
+		4D30FC2C184481E40023A2E9 /* WHSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D30FC2B184481E40023A2E9 /* WHSideMenuViewController.m */; };
+		4D421ED81846C076004AB31C /* Wine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D421ED71846C076004AB31C /* Wine.storyboard */; };
+		4D421EDC1846C08E004AB31C /* WHWineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D421EDB1846C08E004AB31C /* WHWineViewController.m */; };
+		4D421EFE1846DCCC004AB31C /* WHWineryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D421EEC1846DCCC004AB31C /* WHWineryViewController.m */; };
+		4D421EFF1846DCCC004AB31C /* WHAboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D421EEF1846DCCC004AB31C /* WHAboutCell.m */; };
+		4D421F001846DCCC004AB31C /* WHCellarDoorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D421EF11846DCCC004AB31C /* WHCellarDoorCell.m */; };
+		4D421F011846DCCC004AB31C /* WHContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D421EF31846DCCC004AB31C /* WHContactCell.m */; };
+		4D421F031846DCCC004AB31C /* WHWineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D421EF71846DCCC004AB31C /* WHWineCell.m */; };
+		4D421F041846DCCC004AB31C /* WHAboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D421EF91846DCCC004AB31C /* WHAboutCell.xib */; };
+		4D421F051846DCCC004AB31C /* WHCellarDoorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D421EFA1846DCCC004AB31C /* WHCellarDoorCell.xib */; };
+		4D421F061846DCCC004AB31C /* WHContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D421EFB1846DCCC004AB31C /* WHContactCell.xib */; };
+		4D421F071846DCCC004AB31C /* WHEventsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D421EFC1846DCCC004AB31C /* WHEventsTableCell.xib */; };
+		4D421F081846DCCC004AB31C /* WHWineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D421EFD1846DCCC004AB31C /* WHWineCell.xib */; };
+		4D421F0D1846E030004AB31C /* WHEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D421F0C1846E030004AB31C /* WHEventCell.xib */; };
+		4D421F101846E049004AB31C /* WHEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D421F0F1846E049004AB31C /* WHEventCell.m */; };
+		4D421F131846E061004AB31C /* WHEventsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D421F121846E061004AB31C /* WHEventsTableCell.m */; };
+		4D421F161846E9A2004AB31C /* WHWineCarouselCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D421F151846E9A2004AB31C /* WHWineCarouselCell.m */; };
+		4D421F2518470B7C004AB31C /* UIColor+WineHoundColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D421F2418470B7C004AB31C /* UIColor+WineHoundColors.m */; };
+		4D421F2818471317004AB31C /* PCGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D421F2718471317004AB31C /* PCGradientView.m */; };
+		4D434510184564E0000E2DDB /* WHWineriesMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D43450F184564E0000E2DDB /* WHWineriesMapViewController.m */; };
+		4D43451318456EA1000E2DDB /* WHWineriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D43451218456EA1000E2DDB /* WHWineriesViewController.m */; };
+		4D43451618456F2F000E2DDB /* WHWineriesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D43451518456F2F000E2DDB /* WHWineriesListViewController.m */; };
+		4D43451B18456FD0000E2DDB /* WHChildTransitionSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D43451A18456FD0000E2DDB /* WHChildTransitionSegue.m */; };
+		4D43451E18457DA0000E2DDB /* WHWineryViewCells.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D43451D18457DA0000E2DDB /* WHWineryViewCells.m */; };
+		4D434523184585F9000E2DDB /* Edmondsans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D434520184585F9000E2DDB /* Edmondsans-Bold.otf */; };
+		4D434524184585F9000E2DDB /* Edmondsans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D434521184585F9000E2DDB /* Edmondsans-Medium.otf */; };
+		4D434525184585F9000E2DDB /* Edmondsans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D434522184585F9000E2DDB /* Edmondsans-Regular.otf */; };
+		4D434529184587A4000E2DDB /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D434527184587A4000E2DDB /* DataModel.xcdatamodeld */; };
+		4D43453918458968000E2DDB /* WHRegionsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D43453818458968000E2DDB /* WHRegionsListViewController.m */; };
+		4D43453C18459280000E2DDB /* WHRegionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D43453B18459280000E2DDB /* WHRegionViewCell.m */; };
+		4D43DC2E184C63AC006E9466 /* WHMapCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D43DC2D184C63AC006E9466 /* WHMapCalloutView.m */; };
+		4D43DC30184C63BC006E9466 /* WHMapCalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D43DC2F184C63BC006E9466 /* WHMapCalloutView.xib */; };
+		4D508CEC18603AF20016D2AC /* WHApperance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D508CEB18603AF20016D2AC /* WHApperance.m */; };
+		4D587DC418569C2700B2E2C1 /* WHListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D587DC318569C2700B2E2C1 /* WHListViewController.m */; };
+		4D587DC71856B74C00B2E2C1 /* WHFavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D587DC61856B74C00B2E2C1 /* WHFavouritesViewController.m */; };
+		4D587DCA1856B76400B2E2C1 /* WHFavouriteWineriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D587DC91856B76400B2E2C1 /* WHFavouriteWineriesViewController.m */; };
+		4D587DCD1856B77000B2E2C1 /* WHFavouriteWinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D587DCC1856B77000B2E2C1 /* WHFavouriteWinesViewController.m */; };
+		4D587DD31856EAA400B2E2C1 /* WHFavouriteWineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D587DD21856EAA400B2E2C1 /* WHFavouriteWineCell.m */; };
+		4D587DD81856F64E00B2E2C1 /* WHWineryNormalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D587DD71856F64E00B2E2C1 /* WHWineryNormalViewCell.xib */; };
+		4D587DDA1856F65A00B2E2C1 /* WHWineryPremiumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D587DD91856F65A00B2E2C1 /* WHWineryPremiumViewCell.xib */; };
+		4D66707C184DA3BC007B954D /* UIButton+WineHoundButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D66707B184DA3BC007B954D /* UIButton+WineHoundButtons.m */; };
+		4D667081184DA532007B954D /* WHTastingNoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D667080184DA532007B954D /* WHTastingNoteCell.xib */; };
+		4D667084184DA545007B954D /* WHTastingNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D667083184DA545007B954D /* WHTastingNoteCell.m */; };
+		4D667087184DAD88007B954D /* WHWineDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D667086184DAD88007B954D /* WHWineDetailCell.m */; };
+		4D6670A3184DC19A007B954D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6670A2184DC19A007B954D /* CoreData.framework */; };
+		4D71296718640AC0005C8315 /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D71296618640AC0005C8315 /* Event.storyboard */; };
+		4D71296B18640AD4005C8315 /* WHEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D71296A18640AD4005C8315 /* WHEventViewController.m */; };
+		4D8F40E81866CDB300141368 /* WHWineryLocationItemMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F40E71866CDB300141368 /* WHWineryLocationItemMO.m */; };
+		4D8F40EB1866CDB300141368 /* WHWineryListItemMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F40EA1866CDB300141368 /* WHWineryListItemMO.m */; };
+		4D90CEE3184D984400378340 /* WHWineDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D90CEE2184D984400378340 /* WHWineDescriptionCell.m */; };
+		4D90CEE6184D9B9300378340 /* WHWineBuyShareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D90CEE5184D9B9300378340 /* WHWineBuyShareCell.m */; };
+		4D91340C1859AD9800319F82 /* PCGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D91340B1859AD9800319F82 /* PCGalleryViewController.m */; };
+		4D97C640186172B6008EA379 /* WHWineryListItemMO+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D97C63F186172B6008EA379 /* WHWineryListItemMO+Mapping.m */; };
+		4DAE83CE18482778009CED75 /* WHWinerySectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE83CD18482778009CED75 /* WHWinerySectionHeaderView.xib */; };
+		4DAE83D118482786009CED75 /* WHWinerySectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE83D018482786009CED75 /* WHWinerySectionHeaderView.m */; };
+		4DB3C1A7184EC5D900B7BDC8 /* WHFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3C1A6184EC5D900B7BDC8 /* WHFilterViewController.m */; };
+		4DB3C1B4184EDF9C00B7BDC8 /* WHRegionMO+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3C1B3184EDF9C00B7BDC8 /* WHRegionMO+Mapping.m */; };
+		4DB3C1B9184EE3AA00B7BDC8 /* regions.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DB3C1B6184EE3A900B7BDC8 /* regions.json */; };
+		4DB3C1BA184EE3AA00B7BDC8 /* wineries.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DB3C1B7184EE3A900B7BDC8 /* wineries.json */; };
+		4DB3C1BB184EE3AA00B7BDC8 /* wines.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DB3C1B8184EE3A900B7BDC8 /* wines.json */; };
+		4DB3C1BE184EE92A00B7BDC8 /* WHWineryMO+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3C1BD184EE92A00B7BDC8 /* WHWineryMO+Mapping.m */; };
+		4DB3C1CB184EFAA300B7BDC8 /* WHDummyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3C1CA184EFAA300B7BDC8 /* WHDummyData.m */; };
+		4DB3C1CE184F5FFD00B7BDC8 /* WHWineMO+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3C1CD184F5FFD00B7BDC8 /* WHWineMO+Mapping.m */; };
+		4DC1EDA918517FB700A432F4 /* WHWinerySearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC1EDA818517FB700A432F4 /* WHWinerySearchResultCell.xib */; };
+		4DC1EDAD1851840B00A432F4 /* WHWineryMO+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1EDAC1851840B00A432F4 /* WHWineryMO+Additions.m */; };
+		4DC1EDB91851A9DE00A432F4 /* WHHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1EDB81851A9DE00A432F4 /* WHHelpers.m */; };
+		4DCAF1F418582156004685F5 /* WHLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF1F318582156004685F5 /* WHLoadingHUD.m */; };
+		4DCAF20018596193004685F5 /* WHAmenityMO+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF1FF18596193004685F5 /* WHAmenityMO+Mapping.m */; };
+		4DCAF22418596573004685F5 /* WHEventMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF22318596573004685F5 /* WHEventMO.m */; };
+		4DCAF22A18596573004685F5 /* WHAmenityMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF22918596573004685F5 /* WHAmenityMO.m */; };
+		4DCAF23018596573004685F5 /* WHCellarDoorOpenTimeMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF22F18596573004685F5 /* WHCellarDoorOpenTimeMO.m */; };
+		4DCAF23C18596FEC004685F5 /* WHPhotographMO+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF23B18596FEC004685F5 /* WHPhotographMO+Mapping.m */; };
+		4DCAF242185972B9004685F5 /* WHRegionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF241185972B9004685F5 /* WHRegionMO.m */; };
+		4DCAF248185972BA004685F5 /* WHPhotographMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCAF247185972BA004685F5 /* WHPhotographMO.m */; };
+		4DD33CDD187AA11B0068D836 /* WHWineryMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD33CDC187AA11B0068D836 /* WHWineryMO.m */; };
+		4DDDC9E8186418FF000FAD23 /* WHEventInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDDC9E7186418FF000FAD23 /* WHEventInfoCell.xib */; };
+		4DDDC9EA1864190F000FAD23 /* WHEventWhenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDDC9E91864190F000FAD23 /* WHEventWhenCell.xib */; };
+		4DDDC9ED18641920000FAD23 /* WHEventInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDC9EC18641920000FAD23 /* WHEventInfoCell.m */; };
+		4DDDC9F018641929000FAD23 /* WHEventWhenCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDC9EF18641929000FAD23 /* WHEventWhenCell.m */; };
+		4DDDC9F318641EBB000FAD23 /* WHEventButtonsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDC9F218641EBB000FAD23 /* WHEventButtonsCell.m */; };
+		4DDDC9F518641EC9000FAD23 /* WHEventButtonsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDDC9F418641EC9000FAD23 /* WHEventButtonsCell.xib */; };
+		4DDEA69C187B840D00AF2050 /* WHWineRangesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDEA69B187B840D00AF2050 /* WHWineRangesViewController.m */; };
+		4DE0544F1855A61D00713923 /* WHRegionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0544E1855A61D00713923 /* WHRegionViewController.m */; };
+		4DE86907184C162200F9E70B /* WHFilterBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE86906184C162200F9E70B /* WHFilterBarView.m */; };
+		4DE8690A184C272400F9E70B /* UIImage+Resizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE86909184C272400F9E70B /* UIImage+Resizable.m */; };
+		4DE8690D184C28E400F9E70B /* UIFont+Edmondsans.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8690C184C28E400F9E70B /* UIFont+Edmondsans.m */; };
+		4DE86910184C526200F9E70B /* UIViewController+KeyboardHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8690F184C526200F9E70B /* UIViewController+KeyboardHeight.m */; };
+		C31BB3391844373F0016F42F /* libPods-WineHoundTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C31BB3381844373F0016F42F /* libPods-WineHoundTests.a */; };
+		C3EF4F001844292D0090B9BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EF4EFF1844292D0090B9BC /* Foundation.framework */; };
+		C3EF4F021844292D0090B9BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EF4F011844292D0090B9BC /* CoreGraphics.framework */; };
+		C3EF4F041844292D0090B9BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EF4F031844292D0090B9BC /* UIKit.framework */; };
+		C3EF4F221844292D0090B9BC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EF4F211844292D0090B9BC /* XCTest.framework */; };
+		C3EF4F231844292D0090B9BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EF4EFF1844292D0090B9BC /* Foundation.framework */; };
+		C3EF4F241844292D0090B9BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EF4F031844292D0090B9BC /* UIKit.framework */; };
+		C3EF4F2C1844292D0090B9BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3EF4F2A1844292D0090B9BC /* InfoPlist.strings */; };
+		C3EF4F2E1844292D0090B9BC /* WineHoundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EF4F2D1844292D0090B9BC /* WineHoundTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3EF4F251844292D0090B9BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3EF4EF41844292D0090B9BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3EF4EFB1844292D0090B9BC;
+			remoteInfo = WineHound;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D1837A71860483300992209 /* UIViewController+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Appearance.h"; sourceTree = "<group>"; };
+		4D1837A81860483300992209 /* UIViewController+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Appearance.m"; sourceTree = "<group>"; };
+		4D207E75187A9B8D000E12ED /* WHWineRangeMO+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WHWineRangeMO+Mapping.h"; path = "Classes/Mapping/WHWineRangeMO+Mapping.h"; sourceTree = "<group>"; };
+		4D207E76187A9B8D000E12ED /* WHWineRangeMO+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WHWineRangeMO+Mapping.m"; path = "Classes/Mapping/WHWineRangeMO+Mapping.m"; sourceTree = "<group>"; };
+		4D207E78187A9C00000E12ED /* WHWineMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineMO.h; sourceTree = "<group>"; };
+		4D207E79187A9C00000E12ED /* WHWineMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineMO.m; sourceTree = "<group>"; };
+		4D207E7B187A9C00000E12ED /* WHWineRangeMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineRangeMO.h; sourceTree = "<group>"; };
+		4D207E7C187A9C01000E12ED /* WHWineRangeMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineRangeMO.m; sourceTree = "<group>"; };
+		4D23353D1855ADD70046B0F7 /* WHDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDetailViewController.h; sourceTree = "<group>"; };
+		4D23353E1855ADD70046B0F7 /* WHDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDetailViewController.m; sourceTree = "<group>"; };
+		4D2335401855AFFF0046B0F7 /* TableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHeaderView.h; sourceTree = "<group>"; };
+		4D2335411855AFFF0046B0F7 /* TableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableHeaderView.m; sourceTree = "<group>"; };
+		4D24BDC91850531F00452294 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4D24BDCB1850576600452294 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		4D24BDD0185064D400452294 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		4D24BDD818506C4A00452294 /* WHEventMO+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WHEventMO+Mapping.h"; path = "Classes/Mapping/WHEventMO+Mapping.h"; sourceTree = "<group>"; };
+		4D24BDD918506C4A00452294 /* WHEventMO+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WHEventMO+Mapping.m"; path = "Classes/Mapping/WHEventMO+Mapping.m"; sourceTree = "<group>"; };
+		4D2C1DBD185AA201008FBAAA /* WHRestKitSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRestKitSetup.h; sourceTree = "<group>"; };
+		4D2C1DBE185AA201008FBAAA /* WHRestKitSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRestKitSetup.m; sourceTree = "<group>"; };
+		4D30FBE71844708D0023A2E9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D30FBE81844708D0023A2E9 /* WineHound-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WineHound-Info.plist"; sourceTree = "<group>"; };
+		4D30FBE91844708D0023A2E9 /* WineHound-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WineHound-Prefix.pch"; sourceTree = "<group>"; };
+		4D30FBF3184472FB0023A2E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4D30FC03184481600023A2E9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4D30FC04184481600023A2E9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4D30FC0A184481600023A2E9 /* Favourites.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favourites.storyboard; sourceTree = "<group>"; };
+		4D30FC0E184481600023A2E9 /* Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		4D30FC13184481600023A2E9 /* Regions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Regions.storyboard; sourceTree = "<group>"; };
+		4D30FC18184481600023A2E9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		4D30FC1C184481600023A2E9 /* SideMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
+		4D30FC21184481600023A2E9 /* Wineries.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wineries.storyboard; sourceTree = "<group>"; };
+		4D30FC2A184481E40023A2E9 /* WHSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHSideMenuViewController.h; sourceTree = "<group>"; };
+		4D30FC2B184481E40023A2E9 /* WHSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHSideMenuViewController.m; sourceTree = "<group>"; };
+		4D421ED71846C076004AB31C /* Wine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wine.storyboard; sourceTree = "<group>"; };
+		4D421EDA1846C08E004AB31C /* WHWineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineViewController.h; sourceTree = "<group>"; };
+		4D421EDB1846C08E004AB31C /* WHWineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineViewController.m; sourceTree = "<group>"; };
+		4D421EEB1846DCCC004AB31C /* WHWineryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineryViewController.h; sourceTree = "<group>"; };
+		4D421EEC1846DCCC004AB31C /* WHWineryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineryViewController.m; sourceTree = "<group>"; };
+		4D421EEE1846DCCC004AB31C /* WHAboutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHAboutCell.h; sourceTree = "<group>"; };
+		4D421EEF1846DCCC004AB31C /* WHAboutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHAboutCell.m; sourceTree = "<group>"; };
+		4D421EF01846DCCC004AB31C /* WHCellarDoorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHCellarDoorCell.h; sourceTree = "<group>"; };
+		4D421EF11846DCCC004AB31C /* WHCellarDoorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHCellarDoorCell.m; sourceTree = "<group>"; };
+		4D421EF21846DCCC004AB31C /* WHContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHContactCell.h; sourceTree = "<group>"; };
+		4D421EF31846DCCC004AB31C /* WHContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHContactCell.m; sourceTree = "<group>"; };
+		4D421EF61846DCCC004AB31C /* WHWineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineCell.h; sourceTree = "<group>"; };
+		4D421EF71846DCCC004AB31C /* WHWineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineCell.m; sourceTree = "<group>"; };
+		4D421EF91846DCCC004AB31C /* WHAboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHAboutCell.xib; sourceTree = "<group>"; };
+		4D421EFA1846DCCC004AB31C /* WHCellarDoorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHCellarDoorCell.xib; sourceTree = "<group>"; };
+		4D421EFB1846DCCC004AB31C /* WHContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHContactCell.xib; sourceTree = "<group>"; };
+		4D421EFC1846DCCC004AB31C /* WHEventsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHEventsTableCell.xib; sourceTree = "<group>"; };
+		4D421EFD1846DCCC004AB31C /* WHWineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHWineCell.xib; sourceTree = "<group>"; };
+		4D421F0C1846E030004AB31C /* WHEventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHEventCell.xib; sourceTree = "<group>"; };
+		4D421F0E1846E049004AB31C /* WHEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHEventCell.h; sourceTree = "<group>"; };
+		4D421F0F1846E049004AB31C /* WHEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHEventCell.m; sourceTree = "<group>"; };
+		4D421F111846E061004AB31C /* WHEventsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHEventsTableCell.h; sourceTree = "<group>"; };
+		4D421F121846E061004AB31C /* WHEventsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHEventsTableCell.m; sourceTree = "<group>"; };
+		4D421F141846E9A2004AB31C /* WHWineCarouselCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineCarouselCell.h; sourceTree = "<group>"; };
+		4D421F151846E9A2004AB31C /* WHWineCarouselCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineCarouselCell.m; sourceTree = "<group>"; };
+		4D421F2318470B7C004AB31C /* UIColor+WineHoundColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WineHoundColors.h"; sourceTree = "<group>"; };
+		4D421F2418470B7C004AB31C /* UIColor+WineHoundColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WineHoundColors.m"; sourceTree = "<group>"; };
+		4D421F2618471317004AB31C /* PCGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGradientView.h; sourceTree = "<group>"; };
+		4D421F2718471317004AB31C /* PCGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGradientView.m; sourceTree = "<group>"; };
+		4D43450E184564E0000E2DDB /* WHWineriesMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineriesMapViewController.h; sourceTree = "<group>"; };
+		4D43450F184564E0000E2DDB /* WHWineriesMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineriesMapViewController.m; sourceTree = "<group>"; };
+		4D43451118456EA1000E2DDB /* WHWineriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineriesViewController.h; sourceTree = "<group>"; };
+		4D43451218456EA1000E2DDB /* WHWineriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineriesViewController.m; sourceTree = "<group>"; };
+		4D43451418456F2F000E2DDB /* WHWineriesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineriesListViewController.h; sourceTree = "<group>"; };
+		4D43451518456F2F000E2DDB /* WHWineriesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineriesListViewController.m; sourceTree = "<group>"; };
+		4D43451918456FD0000E2DDB /* WHChildTransitionSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHChildTransitionSegue.h; sourceTree = "<group>"; };
+		4D43451A18456FD0000E2DDB /* WHChildTransitionSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHChildTransitionSegue.m; sourceTree = "<group>"; };
+		4D43451C18457DA0000E2DDB /* WHWineryViewCells.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineryViewCells.h; sourceTree = "<group>"; };
+		4D43451D18457DA0000E2DDB /* WHWineryViewCells.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineryViewCells.m; sourceTree = "<group>"; };
+		4D434520184585F9000E2DDB /* Edmondsans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Edmondsans-Bold.otf"; sourceTree = "<group>"; };
+		4D434521184585F9000E2DDB /* Edmondsans-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Edmondsans-Medium.otf"; sourceTree = "<group>"; };
+		4D434522184585F9000E2DDB /* Edmondsans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Edmondsans-Regular.otf"; sourceTree = "<group>"; };
+		4D434528184587A4000E2DDB /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		4D43453718458968000E2DDB /* WHRegionsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRegionsListViewController.h; sourceTree = "<group>"; };
+		4D43453818458968000E2DDB /* WHRegionsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRegionsListViewController.m; sourceTree = "<group>"; };
+		4D43453A18459280000E2DDB /* WHRegionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRegionViewCell.h; sourceTree = "<group>"; };
+		4D43453B18459280000E2DDB /* WHRegionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRegionViewCell.m; sourceTree = "<group>"; };
+		4D43DC2C184C63AC006E9466 /* WHMapCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMapCalloutView.h; sourceTree = "<group>"; };
+		4D43DC2D184C63AC006E9466 /* WHMapCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMapCalloutView.m; sourceTree = "<group>"; };
+		4D43DC2F184C63BC006E9466 /* WHMapCalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHMapCalloutView.xib; sourceTree = "<group>"; };
+		4D508CEA18603AF20016D2AC /* WHApperance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHApperance.h; sourceTree = "<group>"; };
+		4D508CEB18603AF20016D2AC /* WHApperance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHApperance.m; sourceTree = "<group>"; };
+		4D587DC218569C2700B2E2C1 /* WHListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHListViewController.h; sourceTree = "<group>"; };
+		4D587DC318569C2700B2E2C1 /* WHListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHListViewController.m; sourceTree = "<group>"; };
+		4D587DC51856B74C00B2E2C1 /* WHFavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHFavouritesViewController.h; sourceTree = "<group>"; };
+		4D587DC61856B74C00B2E2C1 /* WHFavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHFavouritesViewController.m; sourceTree = "<group>"; };
+		4D587DC81856B76400B2E2C1 /* WHFavouriteWineriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHFavouriteWineriesViewController.h; sourceTree = "<group>"; };
+		4D587DC91856B76400B2E2C1 /* WHFavouriteWineriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHFavouriteWineriesViewController.m; sourceTree = "<group>"; };
+		4D587DCB1856B77000B2E2C1 /* WHFavouriteWinesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHFavouriteWinesViewController.h; sourceTree = "<group>"; };
+		4D587DCC1856B77000B2E2C1 /* WHFavouriteWinesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHFavouriteWinesViewController.m; sourceTree = "<group>"; };
+		4D587DD11856EAA400B2E2C1 /* WHFavouriteWineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHFavouriteWineCell.h; sourceTree = "<group>"; };
+		4D587DD21856EAA400B2E2C1 /* WHFavouriteWineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHFavouriteWineCell.m; sourceTree = "<group>"; };
+		4D587DD71856F64E00B2E2C1 /* WHWineryNormalViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHWineryNormalViewCell.xib; sourceTree = "<group>"; };
+		4D587DD91856F65A00B2E2C1 /* WHWineryPremiumViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHWineryPremiumViewCell.xib; sourceTree = "<group>"; };
+		4D66707A184DA3BC007B954D /* UIButton+WineHoundButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WineHoundButtons.h"; sourceTree = "<group>"; };
+		4D66707B184DA3BC007B954D /* UIButton+WineHoundButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WineHoundButtons.m"; sourceTree = "<group>"; };
+		4D667080184DA532007B954D /* WHTastingNoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHTastingNoteCell.xib; sourceTree = "<group>"; };
+		4D667082184DA545007B954D /* WHTastingNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHTastingNoteCell.h; sourceTree = "<group>"; };
+		4D667083184DA545007B954D /* WHTastingNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHTastingNoteCell.m; sourceTree = "<group>"; };
+		4D667085184DAD88007B954D /* WHWineDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineDetailCell.h; sourceTree = "<group>"; };
+		4D667086184DAD88007B954D /* WHWineDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineDetailCell.m; sourceTree = "<group>"; };
+		4D6670A2184DC19A007B954D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4D71296618640AC0005C8315 /* Event.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
+		4D71296918640AD4005C8315 /* WHEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHEventViewController.h; sourceTree = "<group>"; };
+		4D71296A18640AD4005C8315 /* WHEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHEventViewController.m; sourceTree = "<group>"; };
+		4D8F40E61866CDB300141368 /* WHWineryLocationItemMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineryLocationItemMO.h; sourceTree = "<group>"; };
+		4D8F40E71866CDB300141368 /* WHWineryLocationItemMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineryLocationItemMO.m; sourceTree = "<group>"; };
+		4D8F40E91866CDB300141368 /* WHWineryListItemMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineryListItemMO.h; sourceTree = "<group>"; };
+		4D8F40EA1866CDB300141368 /* WHWineryListItemMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineryListItemMO.m; sourceTree = "<group>"; };
+		4D90CEE1184D984400378340 /* WHWineDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineDescriptionCell.h; sourceTree = "<group>"; };
+		4D90CEE2184D984400378340 /* WHWineDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineDescriptionCell.m; sourceTree = "<group>"; };
+		4D90CEE4184D9B9300378340 /* WHWineBuyShareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineBuyShareCell.h; sourceTree = "<group>"; };
+		4D90CEE5184D9B9300378340 /* WHWineBuyShareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineBuyShareCell.m; sourceTree = "<group>"; };
+		4D91340A1859AD9800319F82 /* PCGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGalleryViewController.h; sourceTree = "<group>"; };
+		4D91340B1859AD9800319F82 /* PCGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGalleryViewController.m; sourceTree = "<group>"; };
+		4D97C63E186172B6008EA379 /* WHWineryListItemMO+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WHWineryListItemMO+Mapping.h"; path = "Classes/Mapping/WHWineryListItemMO+Mapping.h"; sourceTree = "<group>"; };
+		4D97C63F186172B6008EA379 /* WHWineryListItemMO+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WHWineryListItemMO+Mapping.m"; path = "Classes/Mapping/WHWineryListItemMO+Mapping.m"; sourceTree = "<group>"; };
+		4DAE83CD18482778009CED75 /* WHWinerySectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHWinerySectionHeaderView.xib; sourceTree = "<group>"; };
+		4DAE83CF18482786009CED75 /* WHWinerySectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWinerySectionHeaderView.h; sourceTree = "<group>"; };
+		4DAE83D018482786009CED75 /* WHWinerySectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWinerySectionHeaderView.m; sourceTree = "<group>"; };
+		4DB3C1A5184EC5D900B7BDC8 /* WHFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHFilterViewController.h; sourceTree = "<group>"; };
+		4DB3C1A6184EC5D900B7BDC8 /* WHFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHFilterViewController.m; sourceTree = "<group>"; };
+		4DB3C1B2184EDF9C00B7BDC8 /* WHRegionMO+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WHRegionMO+Mapping.h"; path = "Classes/Mapping/WHRegionMO+Mapping.h"; sourceTree = "<group>"; };
+		4DB3C1B3184EDF9C00B7BDC8 /* WHRegionMO+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WHRegionMO+Mapping.m"; path = "Classes/Mapping/WHRegionMO+Mapping.m"; sourceTree = "<group>"; };
+		4DB3C1B6184EE3A900B7BDC8 /* regions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = regions.json; sourceTree = "<group>"; };
+		4DB3C1B7184EE3A900B7BDC8 /* wineries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wineries.json; sourceTree = "<group>"; };
+		4DB3C1B8184EE3A900B7BDC8 /* wines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wines.json; sourceTree = "<group>"; };
+		4DB3C1BC184EE92A00B7BDC8 /* WHWineryMO+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WHWineryMO+Mapping.h"; path = "Classes/Mapping/WHWineryMO+Mapping.h"; sourceTree = "<group>"; };
+		4DB3C1BD184EE92A00B7BDC8 /* WHWineryMO+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WHWineryMO+Mapping.m"; path = "Classes/Mapping/WHWineryMO+Mapping.m"; sourceTree = "<group>"; };
+		4DB3C1C9184EFAA300B7BDC8 /* WHDummyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WHDummyData.h; path = WineHound/Classes/DummyData/WHDummyData.h; sourceTree = SOURCE_ROOT; };
+		4DB3C1CA184EFAA300B7BDC8 /* WHDummyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WHDummyData.m; path = WineHound/Classes/DummyData/WHDummyData.m; sourceTree = SOURCE_ROOT; };
+		4DB3C1CC184F5FFD00B7BDC8 /* WHWineMO+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WHWineMO+Mapping.h"; path = "Classes/Mapping/WHWineMO+Mapping.h"; sourceTree = "<group>"; };
+		4DB3C1CD184F5FFD00B7BDC8 /* WHWineMO+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WHWineMO+Mapping.m"; path = "Classes/Mapping/WHWineMO+Mapping.m"; sourceTree = "<group>"; };
+		4DC1EDA818517FB700A432F4 /* WHWinerySearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHWinerySearchResultCell.xib; sourceTree = "<group>"; };
+		4DC1EDAB1851840B00A432F4 /* WHWineryMO+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WHWineryMO+Additions.h"; path = "Additions/WHWineryMO+Additions.h"; sourceTree = "<group>"; };
+		4DC1EDAC1851840B00A432F4 /* WHWineryMO+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WHWineryMO+Additions.m"; path = "Additions/WHWineryMO+Additions.m"; sourceTree = "<group>"; };
+		4DC1EDB71851A9DE00A432F4 /* WHHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHHelpers.h; sourceTree = "<group>"; };
+		4DC1EDB81851A9DE00A432F4 /* WHHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHHelpers.m; sourceTree = "<group>"; };
+		4DCAF1F218582156004685F5 /* WHLoadingHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHLoadingHUD.h; sourceTree = "<group>"; };
+		4DCAF1F318582156004685F5 /* WHLoadingHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHLoadingHUD.m; sourceTree = "<group>"; };
+		4DCAF1FE18596193004685F5 /* WHAmenityMO+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WHAmenityMO+Mapping.h"; path = "Classes/Mapping/WHAmenityMO+Mapping.h"; sourceTree = "<group>"; };
+		4DCAF1FF18596193004685F5 /* WHAmenityMO+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WHAmenityMO+Mapping.m"; path = "Classes/Mapping/WHAmenityMO+Mapping.m"; sourceTree = "<group>"; };
+		4DCAF22218596573004685F5 /* WHEventMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHEventMO.h; sourceTree = "<group>"; };
+		4DCAF22318596573004685F5 /* WHEventMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHEventMO.m; sourceTree = "<group>"; };
+		4DCAF22818596573004685F5 /* WHAmenityMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHAmenityMO.h; sourceTree = "<group>"; };
+		4DCAF22918596573004685F5 /* WHAmenityMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHAmenityMO.m; sourceTree = "<group>"; };
+		4DCAF22E18596573004685F5 /* WHCellarDoorOpenTimeMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHCellarDoorOpenTimeMO.h; sourceTree = "<group>"; };
+		4DCAF22F18596573004685F5 /* WHCellarDoorOpenTimeMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHCellarDoorOpenTimeMO.m; sourceTree = "<group>"; };
+		4DCAF23A18596FEC004685F5 /* WHPhotographMO+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WHPhotographMO+Mapping.h"; path = "Classes/Mapping/WHPhotographMO+Mapping.h"; sourceTree = "<group>"; };
+		4DCAF23B18596FEC004685F5 /* WHPhotographMO+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WHPhotographMO+Mapping.m"; path = "Classes/Mapping/WHPhotographMO+Mapping.m"; sourceTree = "<group>"; };
+		4DCAF240185972B9004685F5 /* WHRegionMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRegionMO.h; sourceTree = "<group>"; };
+		4DCAF241185972B9004685F5 /* WHRegionMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRegionMO.m; sourceTree = "<group>"; };
+		4DCAF246185972BA004685F5 /* WHPhotographMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHPhotographMO.h; sourceTree = "<group>"; };
+		4DCAF247185972BA004685F5 /* WHPhotographMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHPhotographMO.m; sourceTree = "<group>"; };
+		4DD33CDB187AA11B0068D836 /* WHWineryMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineryMO.h; sourceTree = "<group>"; };
+		4DD33CDC187AA11B0068D836 /* WHWineryMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineryMO.m; sourceTree = "<group>"; };
+		4DDDC9E7186418FF000FAD23 /* WHEventInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHEventInfoCell.xib; sourceTree = "<group>"; };
+		4DDDC9E91864190F000FAD23 /* WHEventWhenCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHEventWhenCell.xib; sourceTree = "<group>"; };
+		4DDDC9EB18641920000FAD23 /* WHEventInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHEventInfoCell.h; sourceTree = "<group>"; };
+		4DDDC9EC18641920000FAD23 /* WHEventInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHEventInfoCell.m; sourceTree = "<group>"; };
+		4DDDC9EE18641929000FAD23 /* WHEventWhenCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHEventWhenCell.h; sourceTree = "<group>"; };
+		4DDDC9EF18641929000FAD23 /* WHEventWhenCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHEventWhenCell.m; sourceTree = "<group>"; };
+		4DDDC9F118641EBB000FAD23 /* WHEventButtonsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHEventButtonsCell.h; sourceTree = "<group>"; };
+		4DDDC9F218641EBB000FAD23 /* WHEventButtonsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHEventButtonsCell.m; sourceTree = "<group>"; };
+		4DDDC9F418641EC9000FAD23 /* WHEventButtonsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHEventButtonsCell.xib; sourceTree = "<group>"; };
+		4DDEA69A187B840D00AF2050 /* WHWineRangesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWineRangesViewController.h; sourceTree = "<group>"; };
+		4DDEA69B187B840D00AF2050 /* WHWineRangesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWineRangesViewController.m; sourceTree = "<group>"; };
+		4DE0544D1855A61D00713923 /* WHRegionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRegionViewController.h; sourceTree = "<group>"; };
+		4DE0544E1855A61D00713923 /* WHRegionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRegionViewController.m; sourceTree = "<group>"; };
+		4DE86905184C162200F9E70B /* WHFilterBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHFilterBarView.h; sourceTree = "<group>"; };
+		4DE86906184C162200F9E70B /* WHFilterBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHFilterBarView.m; sourceTree = "<group>"; };
+		4DE86908184C272400F9E70B /* UIImage+Resizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizable.h"; sourceTree = "<group>"; };
+		4DE86909184C272400F9E70B /* UIImage+Resizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizable.m"; sourceTree = "<group>"; };
+		4DE8690B184C28E400F9E70B /* UIFont+Edmondsans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Edmondsans.h"; sourceTree = "<group>"; };
+		4DE8690C184C28E400F9E70B /* UIFont+Edmondsans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Edmondsans.m"; sourceTree = "<group>"; };
+		4DE8690E184C526200F9E70B /* UIViewController+KeyboardHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KeyboardHeight.h"; sourceTree = "<group>"; };
+		4DE8690F184C526200F9E70B /* UIViewController+KeyboardHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KeyboardHeight.m"; sourceTree = "<group>"; };
+		ADC34D19C82749A581525257 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B7B47A908378475CABDA9C91 /* Pods-WineHoundTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WineHoundTests.xcconfig"; path = "Pods/Pods-WineHoundTests.xcconfig"; sourceTree = "<group>"; };
+		C31BB3341844370A0016F42F /* libPods-WineHoundTests-KIF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-WineHoundTests-KIF.a"; path = "Pods/build/Debug-iphoneos/libPods-WineHoundTests-KIF.a"; sourceTree = "<group>"; };
+		C31BB336184437320016F42F /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		C31BB3381844373F0016F42F /* libPods-WineHoundTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-WineHoundTests.a"; path = "Pods/build/Debug-iphoneos/libPods-WineHoundTests.a"; sourceTree = "<group>"; };
+		C3EF4EFC1844292D0090B9BC /* WineHound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WineHound.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3EF4EFF1844292D0090B9BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3EF4F011844292D0090B9BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C3EF4F031844292D0090B9BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C3EF4F201844292D0090B9BC /* WineHoundTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WineHoundTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3EF4F211844292D0090B9BC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C3EF4F291844292D0090B9BC /* WineHoundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WineHoundTests-Info.plist"; sourceTree = "<group>"; };
+		C3EF4F2B1844292D0090B9BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3EF4F2D1844292D0090B9BC /* WineHoundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WineHoundTests.m; sourceTree = "<group>"; };
+		C72479D996514409BAF5A408 /* libPods-WineHoundTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WineHoundTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5780684D24D45EBBE8725F9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3EF4EF91844292D0090B9BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D24BDCC1850576600452294 /* MessageUI.framework in Frameworks */,
+				4D24BDCA1850531F00452294 /* MapKit.framework in Frameworks */,
+				4D6670A3184DC19A007B954D /* CoreData.framework in Frameworks */,
+				C3EF4F021844292D0090B9BC /* CoreGraphics.framework in Frameworks */,
+				C3EF4F041844292D0090B9BC /* UIKit.framework in Frameworks */,
+				C3EF4F001844292D0090B9BC /* Foundation.framework in Frameworks */,
+				40975ECE1AA045FBB97628ED /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EF4F1D1844292D0090B9BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31BB3391844373F0016F42F /* libPods-WineHoundTests.a in Frameworks */,
+				C3EF4F221844292D0090B9BC /* XCTest.framework in Frameworks */,
+				C3EF4F241844292D0090B9BC /* UIKit.framework in Frameworks */,
+				C3EF4F231844292D0090B9BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D2C1DBC185AA183008FBAAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D2C1DBD185AA201008FBAAA /* WHRestKitSetup.h */,
+				4D2C1DBE185AA201008FBAAA /* WHRestKitSetup.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D30FBDB1844708D0023A2E9 /* WineHound */ = {
+			isa = PBXGroup;
+			children = (
+				4D30FC02184481600023A2E9 /* Classes */,
+				4D30FC07184481600023A2E9 /* Screens */,
+				4D30FBF2184472FB0023A2E9 /* Resources */,
+				4D30FBE61844708D0023A2E9 /* Supporting Files */,
+			);
+			path = WineHound;
+			sourceTree = "<group>";
+		};
+		4D30FBE61844708D0023A2E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D30FBE71844708D0023A2E9 /* main.m */,
+				4D30FBE81844708D0023A2E9 /* WineHound-Info.plist */,
+				4D30FBE91844708D0023A2E9 /* WineHound-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D30FBF2184472FB0023A2E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D43452618458744000E2DDB /* CoreData */,
+				4D43451F184585F9000E2DDB /* Fonts */,
+				4D30FBF3184472FB0023A2E9 /* Images.xcassets */,
+				4DB3C1B5184EE3A900B7BDC8 /* DummyData */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4D30FC02184481600023A2E9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D30FC03184481600023A2E9 /* AppDelegate.h */,
+				4D30FC04184481600023A2E9 /* AppDelegate.m */,
+				4D30FC05184481600023A2E9 /* Controllers */,
+				4D30FC06184481600023A2E9 /* Views */,
+				4D43452A18458839000E2DDB /* ManagedObjects */,
+				4D6670A7184DC850007B954D /* Mapping */,
+				4DC1EDAA185183F300A432F4 /* Additions */,
+				4D421F2218470B51004AB31C /* Helpers */,
+				4D2C1DBC185AA183008FBAAA /* Model */,
+				4DB3C1C8184EFA7400B7BDC8 /* DummyData */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4D30FC05184481600023A2E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DB3C1A5184EC5D900B7BDC8 /* WHFilterViewController.h */,
+				4DB3C1A6184EC5D900B7BDC8 /* WHFilterViewController.m */,
+				4D23353D1855ADD70046B0F7 /* WHDetailViewController.h */,
+				4D23353E1855ADD70046B0F7 /* WHDetailViewController.m */,
+				4D587DC218569C2700B2E2C1 /* WHListViewController.h */,
+				4D587DC318569C2700B2E2C1 /* WHListViewController.m */,
+				4D91340A1859AD9800319F82 /* PCGalleryViewController.h */,
+				4D91340B1859AD9800319F82 /* PCGalleryViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D30FC06184481600023A2E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D421F2618471317004AB31C /* PCGradientView.h */,
+				4D421F2718471317004AB31C /* PCGradientView.m */,
+				4DE86905184C162200F9E70B /* WHFilterBarView.h */,
+				4DE86906184C162200F9E70B /* WHFilterBarView.m */,
+				4D2335401855AFFF0046B0F7 /* TableHeaderView.h */,
+				4D2335411855AFFF0046B0F7 /* TableHeaderView.m */,
+				4DCAF1F218582156004685F5 /* WHLoadingHUD.h */,
+				4DCAF1F318582156004685F5 /* WHLoadingHUD.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D30FC07184481600023A2E9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4D30FC1B184481600023A2E9 /* SideMenu */,
+				4D4345561845B1B7000E2DDB /* Wine */,
+				4D421EE91846DCCC004AB31C /* Winery */,
+				4D30FC1D184481600023A2E9 /* Wineries */,
+				4D30FC11184481600023A2E9 /* Regions */,
+				4D30FC08184481600023A2E9 /* Favourites */,
+				4D30FC0C184481600023A2E9 /* Information */,
+				4D71296518640AAA005C8315 /* Event */,
+				4D30FC16184481600023A2E9 /* Settings */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4D30FC08184481600023A2E9 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				4D30FC09184481600023A2E9 /* Controllers */,
+				4D30FC0B184481600023A2E9 /* Views */,
+				4D30FC0A184481600023A2E9 /* Favourites.storyboard */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		4D30FC09184481600023A2E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D587DC51856B74C00B2E2C1 /* WHFavouritesViewController.h */,
+				4D587DC61856B74C00B2E2C1 /* WHFavouritesViewController.m */,
+				4D587DCB1856B77000B2E2C1 /* WHFavouriteWinesViewController.h */,
+				4D587DCC1856B77000B2E2C1 /* WHFavouriteWinesViewController.m */,
+				4D587DC81856B76400B2E2C1 /* WHFavouriteWineriesViewController.h */,
+				4D587DC91856B76400B2E2C1 /* WHFavouriteWineriesViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D30FC0B184481600023A2E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D587DD11856EAA400B2E2C1 /* WHFavouriteWineCell.h */,
+				4D587DD21856EAA400B2E2C1 /* WHFavouriteWineCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D30FC0C184481600023A2E9 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				4D30FC0D184481600023A2E9 /* Controllers */,
+				4D30FC10184481600023A2E9 /* Views */,
+				4D30FC0E184481600023A2E9 /* Info.storyboard */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		4D30FC0D184481600023A2E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D30FC10184481600023A2E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D30FC11184481600023A2E9 /* Regions */ = {
+			isa = PBXGroup;
+			children = (
+				4D30FC12184481600023A2E9 /* Controllers */,
+				4D30FC15184481600023A2E9 /* Views */,
+				4D30FC13184481600023A2E9 /* Regions.storyboard */,
+			);
+			path = Regions;
+			sourceTree = "<group>";
+		};
+		4D30FC12184481600023A2E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D43453718458968000E2DDB /* WHRegionsListViewController.h */,
+				4D43453818458968000E2DDB /* WHRegionsListViewController.m */,
+				4DE0544D1855A61D00713923 /* WHRegionViewController.h */,
+				4DE0544E1855A61D00713923 /* WHRegionViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D30FC15184481600023A2E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D43453A18459280000E2DDB /* WHRegionViewCell.h */,
+				4D43453B18459280000E2DDB /* WHRegionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D30FC16184481600023A2E9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4D30FC17184481600023A2E9 /* Controllers */,
+				4D30FC1A184481600023A2E9 /* Views */,
+				4D30FC18184481600023A2E9 /* Settings.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4D30FC17184481600023A2E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D30FC1A184481600023A2E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D30FC1B184481600023A2E9 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4D30FC1C184481600023A2E9 /* SideMenu.storyboard */,
+				4D30FC29184481CB0023A2E9 /* Controllers */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		4D30FC1D184481600023A2E9 /* Wineries */ = {
+			isa = PBXGroup;
+			children = (
+				4D30FC1E184481600023A2E9 /* Controllers */,
+				4D30FC20184481600023A2E9 /* Views */,
+				4D43451818456F9E000E2DDB /* Other */,
+				4D43454918459CE6000E2DDB /* XIBs */,
+				4D30FC21184481600023A2E9 /* Wineries.storyboard */,
+			);
+			path = Wineries;
+			sourceTree = "<group>";
+		};
+		4D30FC1E184481600023A2E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D43451118456EA1000E2DDB /* WHWineriesViewController.h */,
+				4D43451218456EA1000E2DDB /* WHWineriesViewController.m */,
+				4D43450E184564E0000E2DDB /* WHWineriesMapViewController.h */,
+				4D43450F184564E0000E2DDB /* WHWineriesMapViewController.m */,
+				4D43451418456F2F000E2DDB /* WHWineriesListViewController.h */,
+				4D43451518456F2F000E2DDB /* WHWineriesListViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D30FC20184481600023A2E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D43451C18457DA0000E2DDB /* WHWineryViewCells.h */,
+				4D43451D18457DA0000E2DDB /* WHWineryViewCells.m */,
+				4D43DC2C184C63AC006E9466 /* WHMapCalloutView.h */,
+				4D43DC2D184C63AC006E9466 /* WHMapCalloutView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D30FC29184481CB0023A2E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D30FC2A184481E40023A2E9 /* WHSideMenuViewController.h */,
+				4D30FC2B184481E40023A2E9 /* WHSideMenuViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D421ED91846C085004AB31C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D421EDA1846C08E004AB31C /* WHWineViewController.h */,
+				4D421EDB1846C08E004AB31C /* WHWineViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D421EE91846DCCC004AB31C /* Winery */ = {
+			isa = PBXGroup;
+			children = (
+				4D421EEA1846DCCC004AB31C /* Controllers */,
+				4D421EED1846DCCC004AB31C /* Views */,
+				4D421EF81846DCCC004AB31C /* XIBs */,
+			);
+			path = Winery;
+			sourceTree = "<group>";
+		};
+		4D421EEA1846DCCC004AB31C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D421EEB1846DCCC004AB31C /* WHWineryViewController.h */,
+				4D421EEC1846DCCC004AB31C /* WHWineryViewController.m */,
+				4DDEA69A187B840D00AF2050 /* WHWineRangesViewController.h */,
+				4DDEA69B187B840D00AF2050 /* WHWineRangesViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D421EED1846DCCC004AB31C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE83CF18482786009CED75 /* WHWinerySectionHeaderView.h */,
+				4DAE83D018482786009CED75 /* WHWinerySectionHeaderView.m */,
+				4D421EEE1846DCCC004AB31C /* WHAboutCell.h */,
+				4D421EEF1846DCCC004AB31C /* WHAboutCell.m */,
+				4D421EF01846DCCC004AB31C /* WHCellarDoorCell.h */,
+				4D421EF11846DCCC004AB31C /* WHCellarDoorCell.m */,
+				4D421EF21846DCCC004AB31C /* WHContactCell.h */,
+				4D421EF31846DCCC004AB31C /* WHContactCell.m */,
+				4D421F111846E061004AB31C /* WHEventsTableCell.h */,
+				4D421F121846E061004AB31C /* WHEventsTableCell.m */,
+				4D421EF61846DCCC004AB31C /* WHWineCell.h */,
+				4D421EF71846DCCC004AB31C /* WHWineCell.m */,
+				4D421F0E1846E049004AB31C /* WHEventCell.h */,
+				4D421F0F1846E049004AB31C /* WHEventCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D421EF81846DCCC004AB31C /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE83CD18482778009CED75 /* WHWinerySectionHeaderView.xib */,
+				4D421EF91846DCCC004AB31C /* WHAboutCell.xib */,
+				4D421EFA1846DCCC004AB31C /* WHCellarDoorCell.xib */,
+				4D421EFB1846DCCC004AB31C /* WHContactCell.xib */,
+				4D421EFC1846DCCC004AB31C /* WHEventsTableCell.xib */,
+				4D421F0C1846E030004AB31C /* WHEventCell.xib */,
+				4D421EFD1846DCCC004AB31C /* WHWineCell.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		4D421F171846FA1B004AB31C /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				4D667080184DA532007B954D /* WHTastingNoteCell.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		4D421F2218470B51004AB31C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4D421F2318470B7C004AB31C /* UIColor+WineHoundColors.h */,
+				4D421F2418470B7C004AB31C /* UIColor+WineHoundColors.m */,
+				4DE86908184C272400F9E70B /* UIImage+Resizable.h */,
+				4DE86909184C272400F9E70B /* UIImage+Resizable.m */,
+				4DE8690B184C28E400F9E70B /* UIFont+Edmondsans.h */,
+				4DE8690C184C28E400F9E70B /* UIFont+Edmondsans.m */,
+				4DE8690E184C526200F9E70B /* UIViewController+KeyboardHeight.h */,
+				4DE8690F184C526200F9E70B /* UIViewController+KeyboardHeight.m */,
+				4D1837A71860483300992209 /* UIViewController+Appearance.h */,
+				4D1837A81860483300992209 /* UIViewController+Appearance.m */,
+				4D66707A184DA3BC007B954D /* UIButton+WineHoundButtons.h */,
+				4D66707B184DA3BC007B954D /* UIButton+WineHoundButtons.m */,
+				4DC1EDB71851A9DE00A432F4 /* WHHelpers.h */,
+				4DC1EDB81851A9DE00A432F4 /* WHHelpers.m */,
+				4D508CEA18603AF20016D2AC /* WHApperance.h */,
+				4D508CEB18603AF20016D2AC /* WHApperance.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4D43451818456F9E000E2DDB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4D43451918456FD0000E2DDB /* WHChildTransitionSegue.h */,
+				4D43451A18456FD0000E2DDB /* WHChildTransitionSegue.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4D43451F184585F9000E2DDB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4D434520184585F9000E2DDB /* Edmondsans-Bold.otf */,
+				4D434521184585F9000E2DDB /* Edmondsans-Medium.otf */,
+				4D434522184585F9000E2DDB /* Edmondsans-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4D43452618458744000E2DDB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4D434527184587A4000E2DDB /* DataModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		4D43452A18458839000E2DDB /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				4DCAF22818596573004685F5 /* WHAmenityMO.h */,
+				4DCAF22918596573004685F5 /* WHAmenityMO.m */,
+				4DCAF22E18596573004685F5 /* WHCellarDoorOpenTimeMO.h */,
+				4DCAF22F18596573004685F5 /* WHCellarDoorOpenTimeMO.m */,
+				4DCAF22218596573004685F5 /* WHEventMO.h */,
+				4DCAF22318596573004685F5 /* WHEventMO.m */,
+				4DCAF246185972BA004685F5 /* WHPhotographMO.h */,
+				4DCAF247185972BA004685F5 /* WHPhotographMO.m */,
+				4DCAF240185972B9004685F5 /* WHRegionMO.h */,
+				4DCAF241185972B9004685F5 /* WHRegionMO.m */,
+				4D8F40E91866CDB300141368 /* WHWineryListItemMO.h */,
+				4D8F40EA1866CDB300141368 /* WHWineryListItemMO.m */,
+				4D8F40E61866CDB300141368 /* WHWineryLocationItemMO.h */,
+				4D8F40E71866CDB300141368 /* WHWineryLocationItemMO.m */,
+				4D207E78187A9C00000E12ED /* WHWineMO.h */,
+				4D207E79187A9C00000E12ED /* WHWineMO.m */,
+				4D207E7B187A9C00000E12ED /* WHWineRangeMO.h */,
+				4D207E7C187A9C01000E12ED /* WHWineRangeMO.m */,
+				4DD33CDB187AA11B0068D836 /* WHWineryMO.h */,
+				4DD33CDC187AA11B0068D836 /* WHWineryMO.m */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		4D43454918459CE6000E2DDB /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				4D43DC2F184C63BC006E9466 /* WHMapCalloutView.xib */,
+				4DC1EDA818517FB700A432F4 /* WHWinerySearchResultCell.xib */,
+				4D587DD71856F64E00B2E2C1 /* WHWineryNormalViewCell.xib */,
+				4D587DD91856F65A00B2E2C1 /* WHWineryPremiumViewCell.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		4D4345561845B1B7000E2DDB /* Wine */ = {
+			isa = PBXGroup;
+			children = (
+				4D421ED91846C085004AB31C /* Controllers */,
+				4D4345571845B1D8000E2DDB /* Views */,
+				4D421F171846FA1B004AB31C /* XIBs */,
+				4D421ED71846C076004AB31C /* Wine.storyboard */,
+			);
+			path = Wine;
+			sourceTree = "<group>";
+		};
+		4D4345571845B1D8000E2DDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D421F141846E9A2004AB31C /* WHWineCarouselCell.h */,
+				4D421F151846E9A2004AB31C /* WHWineCarouselCell.m */,
+				4D90CEE1184D984400378340 /* WHWineDescriptionCell.h */,
+				4D90CEE2184D984400378340 /* WHWineDescriptionCell.m */,
+				4D90CEE4184D9B9300378340 /* WHWineBuyShareCell.h */,
+				4D90CEE5184D9B9300378340 /* WHWineBuyShareCell.m */,
+				4D667082184DA545007B954D /* WHTastingNoteCell.h */,
+				4D667083184DA545007B954D /* WHTastingNoteCell.m */,
+				4D667085184DAD88007B954D /* WHWineDetailCell.h */,
+				4D667086184DAD88007B954D /* WHWineDetailCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D6670A7184DC850007B954D /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				4DB3C1B2184EDF9C00B7BDC8 /* WHRegionMO+Mapping.h */,
+				4DB3C1B3184EDF9C00B7BDC8 /* WHRegionMO+Mapping.m */,
+				4DB3C1BC184EE92A00B7BDC8 /* WHWineryMO+Mapping.h */,
+				4DB3C1BD184EE92A00B7BDC8 /* WHWineryMO+Mapping.m */,
+				4D97C63E186172B6008EA379 /* WHWineryListItemMO+Mapping.h */,
+				4D97C63F186172B6008EA379 /* WHWineryListItemMO+Mapping.m */,
+				4DB3C1CC184F5FFD00B7BDC8 /* WHWineMO+Mapping.h */,
+				4DB3C1CD184F5FFD00B7BDC8 /* WHWineMO+Mapping.m */,
+				4D24BDD818506C4A00452294 /* WHEventMO+Mapping.h */,
+				4D24BDD918506C4A00452294 /* WHEventMO+Mapping.m */,
+				4DCAF1FE18596193004685F5 /* WHAmenityMO+Mapping.h */,
+				4DCAF1FF18596193004685F5 /* WHAmenityMO+Mapping.m */,
+				4DCAF23A18596FEC004685F5 /* WHPhotographMO+Mapping.h */,
+				4DCAF23B18596FEC004685F5 /* WHPhotographMO+Mapping.m */,
+				4D207E75187A9B8D000E12ED /* WHWineRangeMO+Mapping.h */,
+				4D207E76187A9B8D000E12ED /* WHWineRangeMO+Mapping.m */,
+			);
+			name = Mapping;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		4D71296518640AAA005C8315 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				4D71296818640AC8005C8315 /* Controllers */,
+				4DDDC9E518641820000FAD23 /* Views */,
+				4DDDC9E618641821000FAD23 /* XIBs */,
+				4D71296618640AC0005C8315 /* Event.storyboard */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		4D71296818640AC8005C8315 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D71296918640AD4005C8315 /* WHEventViewController.h */,
+				4D71296A18640AD4005C8315 /* WHEventViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4DB3C1B5184EE3A900B7BDC8 /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				4DB3C1B6184EE3A900B7BDC8 /* regions.json */,
+				4DB3C1B7184EE3A900B7BDC8 /* wineries.json */,
+				4DB3C1B8184EE3A900B7BDC8 /* wines.json */,
+				4D24BDD0185064D400452294 /* events.json */,
+			);
+			path = DummyData;
+			sourceTree = "<group>";
+		};
+		4DB3C1C8184EFA7400B7BDC8 /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				4DB3C1C9184EFAA300B7BDC8 /* WHDummyData.h */,
+				4DB3C1CA184EFAA300B7BDC8 /* WHDummyData.m */,
+			);
+			name = DummyData;
+			path = DemoData;
+			sourceTree = "<group>";
+		};
+		4DC1EDAA185183F300A432F4 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				4DC1EDAB1851840B00A432F4 /* WHWineryMO+Additions.h */,
+				4DC1EDAC1851840B00A432F4 /* WHWineryMO+Additions.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		4DDDC9E518641820000FAD23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DDDC9EE18641929000FAD23 /* WHEventWhenCell.h */,
+				4DDDC9EF18641929000FAD23 /* WHEventWhenCell.m */,
+				4DDDC9EB18641920000FAD23 /* WHEventInfoCell.h */,
+				4DDDC9EC18641920000FAD23 /* WHEventInfoCell.m */,
+				4DDDC9F118641EBB000FAD23 /* WHEventButtonsCell.h */,
+				4DDDC9F218641EBB000FAD23 /* WHEventButtonsCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DDDC9E618641821000FAD23 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				4DDDC9E91864190F000FAD23 /* WHEventWhenCell.xib */,
+				4DDDC9E7186418FF000FAD23 /* WHEventInfoCell.xib */,
+				4DDDC9F418641EC9000FAD23 /* WHEventButtonsCell.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		C3EF4EF31844292D0090B9BC = {
+			isa = PBXGroup;
+			children = (
+				4D30FBDB1844708D0023A2E9 /* WineHound */,
+				C3EF4F271844292D0090B9BC /* WineHoundTests */,
+				C3EF4EFE1844292D0090B9BC /* Frameworks */,
+				C3EF4EFD1844292D0090B9BC /* Products */,
+				ADC34D19C82749A581525257 /* Pods.xcconfig */,
+				B7B47A908378475CABDA9C91 /* Pods-WineHoundTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		C3EF4EFD1844292D0090B9BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3EF4EFC1844292D0090B9BC /* WineHound.app */,
+				C3EF4F201844292D0090B9BC /* WineHoundTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3EF4EFE1844292D0090B9BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D24BDCB1850576600452294 /* MessageUI.framework */,
+				4D24BDC91850531F00452294 /* MapKit.framework */,
+				4D6670A2184DC19A007B954D /* CoreData.framework */,
+				C31BB3381844373F0016F42F /* libPods-WineHoundTests.a */,
+				C31BB336184437320016F42F /* libPods.a */,
+				C31BB3341844370A0016F42F /* libPods-WineHoundTests-KIF.a */,
+				C3EF4EFF1844292D0090B9BC /* Foundation.framework */,
+				C3EF4F011844292D0090B9BC /* CoreGraphics.framework */,
+				C3EF4F031844292D0090B9BC /* UIKit.framework */,
+				C3EF4F211844292D0090B9BC /* XCTest.framework */,
+				D5780684D24D45EBBE8725F9 /* libPods.a */,
+				C72479D996514409BAF5A408 /* libPods-WineHoundTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3EF4F271844292D0090B9BC /* WineHoundTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3EF4F2D1844292D0090B9BC /* WineHoundTests.m */,
+				C3EF4F281844292D0090B9BC /* Supporting Files */,
+			);
+			path = WineHoundTests;
+			sourceTree = "<group>";
+		};
+		C3EF4F281844292D0090B9BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3EF4F291844292D0090B9BC /* WineHoundTests-Info.plist */,
+				C3EF4F2A1844292D0090B9BC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3EF4EFB1844292D0090B9BC /* WineHound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3EF4F311844292D0090B9BC /* Build configuration list for PBXNativeTarget "WineHound" */;
+			buildPhases = (
+				6571C2E6077845E682698C29 /* Check Pods Manifest.lock */,
+				C3EF4EF81844292D0090B9BC /* Sources */,
+				C3EF4EF91844292D0090B9BC /* Frameworks */,
+				C3EF4EFA1844292D0090B9BC /* Resources */,
+				48B5581A38BF490C8391B63F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WineHound;
+			productName = WineHound;
+			productReference = C3EF4EFC1844292D0090B9BC /* WineHound.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3EF4F1F1844292D0090B9BC /* WineHoundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3EF4F341844292D0090B9BC /* Build configuration list for PBXNativeTarget "WineHoundTests" */;
+			buildPhases = (
+				21FA6AE3FB804C26B3386969 /* Check Pods Manifest.lock */,
+				C3EF4F1C1844292D0090B9BC /* Sources */,
+				C3EF4F1D1844292D0090B9BC /* Frameworks */,
+				C3EF4F1E1844292D0090B9BC /* Resources */,
+				8B9F16E11E5D4CB89753BB99 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3EF4F261844292D0090B9BC /* PBXTargetDependency */,
+			);
+			name = WineHoundTests;
+			productName = WineHoundTests;
+			productReference = C3EF4F201844292D0090B9BC /* WineHoundTests.octest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3EF4EF41844292D0090B9BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WH;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Papercloud;
+				TargetAttributes = {
+					C3EF4F1F1844292D0090B9BC = {
+						TestTargetID = C3EF4EFB1844292D0090B9BC;
+					};
+				};
+			};
+			buildConfigurationList = C3EF4EF71844292D0090B9BC /* Build configuration list for PBXProject "WineHound" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3EF4EF31844292D0090B9BC;
+			productRefGroup = C3EF4EFD1844292D0090B9BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3EF4EFB1844292D0090B9BC /* WineHound */,
+				C3EF4F1F1844292D0090B9BC /* WineHoundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3EF4EFA1844292D0090B9BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DAE83CE18482778009CED75 /* WHWinerySectionHeaderView.xib in Resources */,
+				4DDDC9E8186418FF000FAD23 /* WHEventInfoCell.xib in Resources */,
+				4D30FC28184481600023A2E9 /* Wineries.storyboard in Resources */,
+				4D24BDD1185064D400452294 /* events.json in Resources */,
+				4D30FBF5184472FB0023A2E9 /* Images.xcassets in Resources */,
+				4DDDC9EA1864190F000FAD23 /* WHEventWhenCell.xib in Resources */,
+				4DDDC9F518641EC9000FAD23 /* WHEventButtonsCell.xib in Resources */,
+				4D421F061846DCCC004AB31C /* WHContactCell.xib in Resources */,
+				4D71296718640AC0005C8315 /* Event.storyboard in Resources */,
+				4D434524184585F9000E2DDB /* Edmondsans-Medium.otf in Resources */,
+				4D587DDA1856F65A00B2E2C1 /* WHWineryPremiumViewCell.xib in Resources */,
+				4D30FC25184481600023A2E9 /* Regions.storyboard in Resources */,
+				4DB3C1B9184EE3AA00B7BDC8 /* regions.json in Resources */,
+				4DB3C1BB184EE3AA00B7BDC8 /* wines.json in Resources */,
+				4D30FC26184481600023A2E9 /* Settings.storyboard in Resources */,
+				4D667081184DA532007B954D /* WHTastingNoteCell.xib in Resources */,
+				4D421F0D1846E030004AB31C /* WHEventCell.xib in Resources */,
+				4D434525184585F9000E2DDB /* Edmondsans-Regular.otf in Resources */,
+				4D421ED81846C076004AB31C /* Wine.storyboard in Resources */,
+				4D587DD81856F64E00B2E2C1 /* WHWineryNormalViewCell.xib in Resources */,
+				4D30FC24184481600023A2E9 /* Info.storyboard in Resources */,
+				4D421F051846DCCC004AB31C /* WHCellarDoorCell.xib in Resources */,
+				4D43DC30184C63BC006E9466 /* WHMapCalloutView.xib in Resources */,
+				4D434523184585F9000E2DDB /* Edmondsans-Bold.otf in Resources */,
+				4D30FC23184481600023A2E9 /* Favourites.storyboard in Resources */,
+				4D421F041846DCCC004AB31C /* WHAboutCell.xib in Resources */,
+				4DC1EDA918517FB700A432F4 /* WHWinerySearchResultCell.xib in Resources */,
+				4D421F071846DCCC004AB31C /* WHEventsTableCell.xib in Resources */,
+				4D421F081846DCCC004AB31C /* WHWineCell.xib in Resources */,
+				4DB3C1BA184EE3AA00B7BDC8 /* wineries.json in Resources */,
+				4D30FC27184481600023A2E9 /* SideMenu.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EF4F1E1844292D0090B9BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EF4F2C1844292D0090B9BC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21FA6AE3FB804C26B3386969 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		48B5581A38BF490C8391B63F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6571C2E6077845E682698C29 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B9F16E11E5D4CB89753BB99 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-WineHoundTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3EF4EF81844292D0090B9BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D23353F1855ADD70046B0F7 /* WHDetailViewController.m in Sources */,
+				4D421EDC1846C08E004AB31C /* WHWineViewController.m in Sources */,
+				4DCAF22A18596573004685F5 /* WHAmenityMO.m in Sources */,
+				4D421F101846E049004AB31C /* WHEventCell.m in Sources */,
+				4D97C640186172B6008EA379 /* WHWineryListItemMO+Mapping.m in Sources */,
+				4D421F011846DCCC004AB31C /* WHContactCell.m in Sources */,
+				4DB3C1BE184EE92A00B7BDC8 /* WHWineryMO+Mapping.m in Sources */,
+				4D43451318456EA1000E2DDB /* WHWineriesViewController.m in Sources */,
+				4DCAF1F418582156004685F5 /* WHLoadingHUD.m in Sources */,
+				4D421EFF1846DCCC004AB31C /* WHAboutCell.m in Sources */,
+				4D43453C18459280000E2DDB /* WHRegionViewCell.m in Sources */,
+				4DE8690D184C28E400F9E70B /* UIFont+Edmondsans.m in Sources */,
+				4DCAF23C18596FEC004685F5 /* WHPhotographMO+Mapping.m in Sources */,
+				4D587DC418569C2700B2E2C1 /* WHListViewController.m in Sources */,
+				4DE0544F1855A61D00713923 /* WHRegionViewController.m in Sources */,
+				4D43451E18457DA0000E2DDB /* WHWineryViewCells.m in Sources */,
+				4DCAF248185972BA004685F5 /* WHPhotographMO.m in Sources */,
+				4D90CEE6184D9B9300378340 /* WHWineBuyShareCell.m in Sources */,
+				4DB3C1B4184EDF9C00B7BDC8 /* WHRegionMO+Mapping.m in Sources */,
+				4D421F161846E9A2004AB31C /* WHWineCarouselCell.m in Sources */,
+				4DAE83D118482786009CED75 /* WHWinerySectionHeaderView.m in Sources */,
+				4D8F40EB1866CDB300141368 /* WHWineryListItemMO.m in Sources */,
+				4D508CEC18603AF20016D2AC /* WHApperance.m in Sources */,
+				4D421F001846DCCC004AB31C /* WHCellarDoorCell.m in Sources */,
+				4DDDC9F018641929000FAD23 /* WHEventWhenCell.m in Sources */,
+				4D30FC2C184481E40023A2E9 /* WHSideMenuViewController.m in Sources */,
+				4D667084184DA545007B954D /* WHTastingNoteCell.m in Sources */,
+				4DB3C1CE184F5FFD00B7BDC8 /* WHWineMO+Mapping.m in Sources */,
+				4DE86910184C526200F9E70B /* UIViewController+KeyboardHeight.m in Sources */,
+				4DCAF20018596193004685F5 /* WHAmenityMO+Mapping.m in Sources */,
+				4D30FBEE1844708D0023A2E9 /* main.m in Sources */,
+				4D434529184587A4000E2DDB /* DataModel.xcdatamodeld in Sources */,
+				4DCAF23018596573004685F5 /* WHCellarDoorOpenTimeMO.m in Sources */,
+				4D2335421855AFFF0046B0F7 /* TableHeaderView.m in Sources */,
+				4DC1EDAD1851840B00A432F4 /* WHWineryMO+Additions.m in Sources */,
+				4D421F2818471317004AB31C /* PCGradientView.m in Sources */,
+				4D43453918458968000E2DDB /* WHRegionsListViewController.m in Sources */,
+				4D587DD31856EAA400B2E2C1 /* WHFavouriteWineCell.m in Sources */,
+				4DE8690A184C272400F9E70B /* UIImage+Resizable.m in Sources */,
+				4D421EFE1846DCCC004AB31C /* WHWineryViewController.m in Sources */,
+				4DDEA69C187B840D00AF2050 /* WHWineRangesViewController.m in Sources */,
+				4DD33CDD187AA11B0068D836 /* WHWineryMO.m in Sources */,
+				4DE86907184C162200F9E70B /* WHFilterBarView.m in Sources */,
+				4D587DC71856B74C00B2E2C1 /* WHFavouritesViewController.m in Sources */,
+				4D24BDDA18506C4A00452294 /* WHEventMO+Mapping.m in Sources */,
+				4D91340C1859AD9800319F82 /* PCGalleryViewController.m in Sources */,
+				4DCAF242185972B9004685F5 /* WHRegionMO.m in Sources */,
+				4D8F40E81866CDB300141368 /* WHWineryLocationItemMO.m in Sources */,
+				4DDDC9F318641EBB000FAD23 /* WHEventButtonsCell.m in Sources */,
+				4D43451618456F2F000E2DDB /* WHWineriesListViewController.m in Sources */,
+				4D71296B18640AD4005C8315 /* WHEventViewController.m in Sources */,
+				4D207E77187A9B8D000E12ED /* WHWineRangeMO+Mapping.m in Sources */,
+				4D434510184564E0000E2DDB /* WHWineriesMapViewController.m in Sources */,
+				4D90CEE3184D984400378340 /* WHWineDescriptionCell.m in Sources */,
+				4D1837A91860483300992209 /* UIViewController+Appearance.m in Sources */,
+				4DC1EDB91851A9DE00A432F4 /* WHHelpers.m in Sources */,
+				4DCAF22418596573004685F5 /* WHEventMO.m in Sources */,
+				4D421F131846E061004AB31C /* WHEventsTableCell.m in Sources */,
+				4D587DCD1856B77000B2E2C1 /* WHFavouriteWinesViewController.m in Sources */,
+				4D43DC2E184C63AC006E9466 /* WHMapCalloutView.m in Sources */,
+				4D587DCA1856B76400B2E2C1 /* WHFavouriteWineriesViewController.m in Sources */,
+				4D421F2518470B7C004AB31C /* UIColor+WineHoundColors.m in Sources */,
+				4D667087184DAD88007B954D /* WHWineDetailCell.m in Sources */,
+				4DB3C1CB184EFAA300B7BDC8 /* WHDummyData.m in Sources */,
+				4D66707C184DA3BC007B954D /* UIButton+WineHoundButtons.m in Sources */,
+				4DDDC9ED18641920000FAD23 /* WHEventInfoCell.m in Sources */,
+				4D43451B18456FD0000E2DDB /* WHChildTransitionSegue.m in Sources */,
+				4D207E7A187A9C00000E12ED /* WHWineMO.m in Sources */,
+				4D421F031846DCCC004AB31C /* WHWineCell.m in Sources */,
+				4D2C1DBF185AA201008FBAAA /* WHRestKitSetup.m in Sources */,
+				4D207E7D187A9C01000E12ED /* WHWineRangeMO.m in Sources */,
+				4D30FC22184481600023A2E9 /* AppDelegate.m in Sources */,
+				4DB3C1A7184EC5D900B7BDC8 /* WHFilterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EF4F1C1844292D0090B9BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EF4F2E1844292D0090B9BC /* WineHoundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3EF4F261844292D0090B9BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3EF4EFB1844292D0090B9BC /* WineHound */;
+			targetProxy = C3EF4F251844292D0090B9BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3EF4F2A1844292D0090B9BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3EF4F2B1844292D0090B9BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3EF4F2F1844292D0090B9BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3EF4F301844292D0090B9BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: AURA Interactive Pty Ltd (ZBTYDD7YN2)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "DF47455E-347D-41A6-B5C5-644D20CDB4DD";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3EF4F321844292D0090B9BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC34D19C82749A581525257 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: AURA Interactive Pty Ltd (ZBTYDD7YN2)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WineHound/Supporting Files/WineHound-Prefix.pch";
+				INFOPLIST_FILE = "WineHound/Supporting Files/WineHound-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
+				PROVISIONING_PROFILE = "B0775AB9-7B6E-43F8-B5DE-04111140EF3C";
+=======
+				PROVISIONING_PROFILE = "0B00F637-9048-4822-8D03-BE7932D44665";
+>>>>>>> 58727633284b53d35b3356466ae17142d66953e9
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C3EF4F331844292D0090B9BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC34D19C82749A581525257 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: AURA Interactive Pty Ltd (ZBTYDD7YN2)";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WineHound/Supporting Files/WineHound-Prefix.pch";
+				INFOPLIST_FILE = "WineHound/Supporting Files/WineHound-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
+				PROVISIONING_PROFILE = "B0775AB9-7B6E-43F8-B5DE-04111140EF3C";
+=======
+				PROVISIONING_PROFILE = "0B00F637-9048-4822-8D03-BE7932D44665";
+>>>>>>> 58727633284b53d35b3356466ae17142d66953e9
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C3EF4F351844292D0090B9BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7B47A908378475CABDA9C91 /* Pods-WineHoundTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WineHound.app/WineHound";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WineHound/WineHound-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WineHoundTests/WineHoundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C3EF4F361844292D0090B9BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7B47A908378475CABDA9C91 /* Pods-WineHoundTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WineHound.app/WineHound";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WineHound/WineHound-Prefix.pch";
+				INFOPLIST_FILE = "WineHoundTests/WineHoundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3EF4EF71844292D0090B9BC /* Build configuration list for PBXProject "WineHound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3EF4F2F1844292D0090B9BC /* Debug */,
+				C3EF4F301844292D0090B9BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3EF4F311844292D0090B9BC /* Build configuration list for PBXNativeTarget "WineHound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3EF4F321844292D0090B9BC /* Debug */,
+				C3EF4F331844292D0090B9BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3EF4F341844292D0090B9BC /* Build configuration list for PBXNativeTarget "WineHoundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3EF4F351844292D0090B9BC /* Debug */,
+				C3EF4F361844292D0090B9BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4D434527184587A4000E2DDB /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D434528184587A4000E2DDB /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 4D434528184587A4000E2DDB /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C3EF4EF41844292D0090B9BC /* Project object */;
+}

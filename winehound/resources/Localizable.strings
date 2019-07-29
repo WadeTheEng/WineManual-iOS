@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  WineHound
+
+  Created by Mark Turner on 17/01/2014.
+  Copyright (c) 2014 Papercloud. All rights reserved.
+*/
+
+"kFavouriteNoEmailAlertTitle"      = "No Email Address";
+"kFavouriteNoEmailAlertMessage"    = "Please provide an email address to sign up to this winery's mailing list.";
+"kFavouriteNoInternetAlertTitle"   = "No Network";
+"kFavouriteNoInternetAlertMessage" = "Sorry, you need an internet connection to add to favourites. Please try again";
+
+"kWineNoPDFAlertTitle"             = "No PDF";
+"kWineNoPDFAlertMessage"           = "Sorry, there are no downloadable tasting notes for this Wine yet.";
+
+"kRestaurantNoPDFAlertTitle"       = "No PDF";
+"kRestaurantNoPDFAlertMessage"     = "Sorry, there is no menu available for this Restaurant.";
+
+"kCalendarAccessDeniedMessage"     = "WineHound needs permission to add this event to your calendar. You will need to enable access through your Privacy Settings.";
+
+"kAboutScreenAboutDescription"     = "Winehound is your essential guide to all of Australia’s wineries. Explore wine regions, discover wineries and view detailed information on wines, cellar doors and the wine events in the regions and capital cities.";

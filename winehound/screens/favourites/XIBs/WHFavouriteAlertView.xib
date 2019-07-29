@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ix4-k9-Q3S" customClass="WHFavouriteAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="354"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egc-Xn-myf">
+                    <rect key="frame" x="20" y="10" width="220" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="BpB-gS-pRb"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="fxD-EO-80P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wc5-hh-qQT">
+                    <rect key="frame" x="20" y="271" width="220" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.18039215689999999" green="0.66274509800000003" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="Jx5-FI-gx3"/>
+                    </constraints>
+                    <state key="normal" title="Add to Favourites" image="favourite_alert_favourite_icon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you wish to be added to this winery's mailing list to receive their news and events?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="QKA-9t-OKV">
+                    <rect key="frame" x="20" y="45" width="220" height="82"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMC-eY-aH8">
+                    <rect key="frame" x="20" y="315" width="220" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Opt out from mailing list">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wc5-hh-qQT" secondAttribute="bottom" constant="44" id="0v6-Ak-r40"/>
+                <constraint firstItem="CMC-eY-aH8" firstAttribute="leading" secondItem="Ix4-k9-Q3S" secondAttribute="leading" constant="20" id="Clu-Hz-zfO"/>
+                <constraint firstItem="Egc-Xn-myf" firstAttribute="leading" secondItem="Ix4-k9-Q3S" secondAttribute="leading" constant="20" id="F8u-ck-oQZ"/>
+                <constraint firstItem="CMC-eY-aH8" firstAttribute="top" secondItem="wc5-hh-qQT" secondAttribute="bottom" constant="5" id="MpO-IT-QiB"/>
+                <constraint firstAttribute="bottom" secondItem="CMC-eY-aH8" secondAttribute="bottom" constant="5" id="Ncy-R0-UNf"/>
+                <constraint firstItem="Egc-Xn-myf" firstAttribute="top" secondItem="Ix4-k9-Q3S" secondAttribute="top" constant="10" id="RdL-Nl-UpQ"/>
+                <constraint firstAttribute="trailing" secondItem="wc5-hh-qQT" secondAttribute="trailing" constant="20" id="Shu-Eu-XQl"/>
+                <constraint firstAttribute="trailing" secondItem="Egc-Xn-myf" secondAttribute="trailing" constant="20" id="Snq-Xs-4dq"/>
+                <constraint firstItem="QKA-9t-OKV" firstAttribute="top" secondItem="Egc-Xn-myf" secondAttribute="bottom" constant="5" id="fua-Ui-3Sd"/>
+                <constraint firstItem="QKA-9t-OKV" firstAttribute="leading" secondItem="Ix4-k9-Q3S" secondAttribute="leading" constant="20" id="g1x-a6-chf"/>
+                <constraint firstItem="wc5-hh-qQT" firstAttribute="leading" secondItem="Ix4-k9-Q3S" secondAttribute="leading" constant="20" id="kfx-mk-FzX"/>
+                <constraint firstAttribute="trailing" secondItem="CMC-eY-aH8" secondAttribute="trailing" constant="20" id="oKR-zb-Z8I"/>
+                <constraint firstAttribute="trailing" secondItem="QKA-9t-OKV" secondAttribute="trailing" constant="20" id="tpV-WH-EX0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_detailLabel" destination="QKA-9t-OKV" id="nH0-ow-66I"/>
+                <outlet property="_favouriteButton" destination="wc5-hh-qQT" id="Mx4-5H-DDN"/>
+                <outlet property="_optOutButton" destination="CMC-eY-aH8" id="eJD-KB-WGg"/>
+                <outlet property="_titleLabel" destination="Egc-Xn-myf" id="qtw-YB-07f"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="favourite_alert_favourite_icon" width="23" height="18"/>
+    </resources>
+</document>

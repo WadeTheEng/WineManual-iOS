@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="EJI-ye-Q1w" customClass="WHWineListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EJI-ye-Q1w" id="d7J-xA-wyf">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H7k-hr-9Zj">
+                        <rect key="frame" x="12" y="12" width="50" height="107"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.83921568629999999" green="0.1058823529" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="MST-AB-0aG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2009 Yering Station Marsanne" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="233" translatesAutoresizingMaskIntoConstraints="NO" id="nOo-BY-lZY">
+                        <rect key="frame" x="72" y="14" width="233" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="ADC-eE-Ept"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uplifted fruit aromas of fresh peach, apricot and pear, with a hint of orange blosson and ginger." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="233" translatesAutoresizingMaskIntoConstraints="NO" id="2j1-3X-E4H">
+                        <rect key="frame" x="72" y="36" width="233" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ut4-wJ-Y1I">
+                        <rect key="frame" x="30" y="128" width="290" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Hbu-Al-X0u"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="H7k-hr-9Zj" firstAttribute="top" secondItem="d7J-xA-wyf" secondAttribute="top" constant="12" id="Ojp-vt-mMR"/>
+                    <constraint firstItem="H7k-hr-9Zj" firstAttribute="leading" secondItem="d7J-xA-wyf" secondAttribute="leading" constant="12" id="WZP-oM-y3g"/>
+                    <constraint firstAttribute="bottom" secondItem="H7k-hr-9Zj" secondAttribute="bottom" constant="10" id="aB5-0B-EsO"/>
+                    <constraint firstItem="nOo-BY-lZY" firstAttribute="top" secondItem="d7J-xA-wyf" secondAttribute="top" constant="14" id="eoz-6U-2gD"/>
+                    <constraint firstAttribute="trailing" secondItem="Ut4-wJ-Y1I" secondAttribute="trailing" id="f8B-Pj-WA4"/>
+                    <constraint firstItem="2j1-3X-E4H" firstAttribute="top" secondItem="nOo-BY-lZY" secondAttribute="bottom" constant="5" id="jM0-gd-pCB"/>
+                    <constraint firstItem="2j1-3X-E4H" firstAttribute="leading" secondItem="d7J-xA-wyf" secondAttribute="leading" constant="72" id="jxW-Lv-ZG9"/>
+                    <constraint firstItem="nOo-BY-lZY" firstAttribute="leading" secondItem="d7J-xA-wyf" secondAttribute="leading" constant="72" id="kC9-mv-yka"/>
+                    <constraint firstAttribute="bottom" secondItem="Ut4-wJ-Y1I" secondAttribute="bottom" id="tHN-DP-O8T"/>
+                    <constraint firstItem="Ut4-wJ-Y1I" firstAttribute="leading" secondItem="d7J-xA-wyf" secondAttribute="leading" constant="30" id="tT4-ta-AjR"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2j1-3X-E4H" secondAttribute="bottom" constant="10" id="wQp-Oj-uGP"/>
+                    <constraint firstAttribute="trailing" secondItem="2j1-3X-E4H" secondAttribute="trailing" constant="15" id="yE0-kl-gvb"/>
+                    <constraint firstAttribute="trailing" secondItem="nOo-BY-lZY" secondAttribute="trailing" constant="15" id="zlb-Pd-sTG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottleImageView" destination="H7k-hr-9Zj" id="br1-RA-jhE"/>
+                <outlet property="descriptionLabel" destination="2j1-3X-E4H" id="ygx-MJ-1KH"/>
+                <outlet property="titleLabel" destination="nOo-BY-lZY" id="TK5-xG-edZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="JMc-DK-BYa" customClass="WHTastingNoteCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JMc-DK-BYa" id="QSM-tm-bCh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EA-MW-ELy">
+                        <rect key="frame" x="10" y="4" width="300" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark cherry, blackberry and vanilla bean spice with brooding richness. Lovely lifted violet perfume sweetness. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="7Qp-bj-UnD">
+                        <rect key="frame" x="10" y="28" width="300" height="51"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960784313721" green="0.94117647058823528" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="7Qp-bj-UnD" firstAttribute="leading" secondItem="QSM-tm-bCh" secondAttribute="leading" constant="10" id="BgC-EF-b9V"/>
+                    <constraint firstAttribute="trailing" secondItem="3EA-MW-ELy" secondAttribute="trailing" constant="10" id="DHP-FJ-dBN"/>
+                    <constraint firstItem="7Qp-bj-UnD" firstAttribute="top" secondItem="3EA-MW-ELy" secondAttribute="bottom" constant="7" id="EqL-cV-GGc"/>
+                    <constraint firstAttribute="trailing" secondItem="7Qp-bj-UnD" secondAttribute="trailing" constant="10" id="G3h-as-Va3"/>
+                    <constraint firstItem="3EA-MW-ELy" firstAttribute="top" secondItem="QSM-tm-bCh" secondAttribute="top" constant="4" id="j1W-HG-KbX"/>
+                    <constraint firstItem="3EA-MW-ELy" firstAttribute="leading" secondItem="QSM-tm-bCh" secondAttribute="leading" constant="10" id="kUe-xs-Ls6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_tastingDescriptionLabel" destination="7Qp-bj-UnD" id="ebJ-kj-yWZ"/>
+                <outlet property="_tastingTitleLabel" destination="3EA-MW-ELy" id="Gl5-ZC-fi8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
